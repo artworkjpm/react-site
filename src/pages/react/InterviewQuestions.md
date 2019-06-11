@@ -1,6 +1,6 @@
-# React interview questions
+# Possible React interview questions
 
-## Name lifecycle methods adn their purpose
+## Name lifecycle methods and their purpose
 
 We have the initial render and re-render, lifecyles have changed since version 16.4
 
@@ -22,11 +22,17 @@ We have the initial render and re-render, lifecyles have changed since version 1
 
 ---
 
+## What are controlled components?
+
+React controls the component in a different way to standard HTML forms, the component containing the form will keep track of the value of the input in it's state and will re-render the component each time the callback function e.g. `onChange` is fired as the state will be updated.
+
 ## What is a Pure Component?
 
-A pure component is a component which, given the same props, always renders the same UI, and has no side-effects. These kinds of components are generally very easy to test. You’ll need a way to select the component (in this case, we’re selecting by the greeting className), and you'll need to know the expected output. To write pure component tests, I use render-component from RITEway.
+PureComponent is exactly the same as Component except that it handles the `shouldComponentUpdate` method for us. When props or state changes, PureComponent will do a shallow comparison on both props and state. Component on the other hand won't compare current props and state to next out of the box. Thus, the component will re-render by default whenever shouldComponentUpdate is called. It helps performance.
 
 ## What is the difference between a function and class component?
+
+Class components are when you need to declare a state, ie, a piece of data that will be changed or passed down, and lifecycle hooks. Function components don't require state, they just render some jsx or accept some data passed down as props.
 
 ## What does Immutable mean?
 
@@ -34,11 +40,25 @@ Basically means an object cannot be mutated, it always returns a new object with
 
 ## What is a higher order component?
 
+Two things happen with an HOC:
+
+1. Takes a component as argument
+2. Return something
+   Currying is the process of breaking down a function into a series of functions that each take a single argument. HOC's often use the double () which can throw some people `export default Loading("contacts")(Feed);`
+
 ## Why have a single state of truth?
+
+One place to handle changes to data, will be much easier to manage, test and see what is happening.
 
 ## When should you use local state, global state or Redux/Context.API?
 
+Use local state if your component is only changing data inside that component, other components don't need those values.
+Global state is used when you want to use data in multiple components, you pass down the data through props.
+Redux or the Context.API already built into React, is used when the passing down is getting to much, ie you have many nested components and the pass downing is getting tedius and hard to manage.
+
 ## How does Redux prevent mutation?
+
+It uses a pattern known as immutability, basically makes a copy of an object rather than change the real object. This makes going back in time possible in that we can revert changes to data, this is useful for UI's like facebook when you want to revert something you posted etc.
 
 ## When is a good time to use REFS instate of State?
 
@@ -49,3 +69,11 @@ I have used in in an input form which enabled me to use less code because I didn
 ## Why is Redux good?
 
 For medium to large web sites, it will be very good to handle changes to state and seeing everything through the very good Redux developer tool. For small websites it will be overkill because setting up Redux requires a lot code to do simple things. You have to have a `reducer` call an `action`, create an `action` etc etc.
+
+### Explain the components of Redux.
+
+** Redux is composed of the following components: **
+
+⋅⋅* Action — Actions are payloads of information that send data from our application to our store. They are the only source of information for the store. We send them to the store using store.dispatch(). Primarly, they are just an object describes what happened in our app.
+⋅⋅* Reducer — Reducers specify how the application’s state changes in response to actions sent to the store. Remember that actions only describe what happened, but don’t describe how the application’s state changes. So this place determines how state will change to an action.
+⋅⋅\* Store — The Store is the object that brings Action and Reducer together. The store has the following responsibilities: Holds application state; Allows access to state via getState(); Allows state to be updated via dispatch(action); Registers listeners via subscribe(listener); Handles unregistering of listeners via the function returned by subscribe(listener).
