@@ -6,6 +6,7 @@ import Footer from "./template-components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import ReactView from "./pages/React";
+import Planets from "./pages/react/Planets";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -19,8 +20,9 @@ function App() {
         <Container>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/react" component={ReactView} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/react" component={ReactView} />
+            <Route exact path="/react/planets" component={Planets} />
             <Route component={NotFound} />
           </Switch>
         </Container>

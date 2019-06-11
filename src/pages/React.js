@@ -9,16 +9,30 @@ const ReactView = () => {
       <Row className="">
         <Col xs={12} md={6} className="mt-4">
           <Card>
-            <Card.Img variant="top" src="images/react_img.png" />
+            <Card.Img variant="top" src="images/planets/Planet_alignment.jpg" />
             <Card.Body>
-              <Card.Title>React.js work</Card.Title>
+              <Card.Title>My first React page!</Card.Title>
               <Card.Text>
-                React is the most popular library, for good reason; here a some
-                real life projects, game apps and random things I've done with
-                React/Redux
+                Here is React in its purest form, an object array with data,
+                creating a jsx template, creating a component which maps that
+                jsx and renders out the content. Also, you will get to read up
+                the essential facts of our solar system. I particularly liked
+                using the <code>(...planet)</code> spread operator, so I don't
+                need to list each prop name and value
               </Card.Text>
-              <Link to="/react">
+              <Link to="/react/planets">
                 <Button variant="dark">Take a look</Button>
+              </Link>
+              <Link to="/react/planets" className="ml-4">
+                <Button variant="dark">
+                  <img
+                    src="images/GitHub-Mark-Light-32px.png"
+                    alt="github"
+                    width="22"
+                    className="mr-2"
+                  />
+                  Github code
+                </Button>
               </Link>
             </Card.Body>
           </Card>
