@@ -22,30 +22,30 @@ We have the initial render and re-render, lifecyles have changed since version 1
 
 ---
 
-### What is a Pure Component?
+## What is a Pure Component?
 
 A pure component is a component which, given the same props, always renders the same UI, and has no side-effects. These kinds of components are generally very easy to test. You’ll need a way to select the component (in this case, we’re selecting by the greeting className), and you'll need to know the expected output. To write pure component tests, I use render-component from RITEway.
 
-### What is the difference between a function and class component?
+## What is the difference between a function and class component?
 
-### What does Immutable mean?
+## What does Immutable mean?
 
 Basically means an object cannot be mutated, it always returns a new object with the updated operation, like a copy of the object, not amending the original data. Can be useful in UI's when we need to revert back an action.
 
-### What is a higher order component?
+## What is a higher order component?
 
-### Why have a single state of truth?
+## Why have a single state of truth?
 
-### When should you use local state, global state or Redux/Context.API?
+## When should you use local state, global state or Redux/Context.API?
 
-### How does Redux prevent mutation?
+## How does Redux prevent mutation?
 
-### When is a good time to use REFS instate of State?
+## When is a good time to use REFS instate of State?
 
 I have used in in an input form which enabled me to use less code because I didn't have to declare methods for the changing based on state, I just did an onChange method of the Ref.
 
-### Unit testing with React
+## Unit testing with React
 
-### Why is Redux good?
+## Why is Redux good?
 
 For medium to large web sites, it will be very good to handle changes to state and seeing everything through the very good Redux developer tool. For small websites it will be overkill because setting up Redux requires a lot code to do simple things. You have to have a `reducer` call an `action`, create an `action` etc etc.
