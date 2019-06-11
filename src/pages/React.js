@@ -23,17 +23,21 @@ const ReactView = () => {
               <Link to="/react/planets">
                 <Button variant="dark">Take a look</Button>
               </Link>
-              <Link to="/react/planets" className="ml-4">
-                <Button variant="dark">
-                  <img
-                    src="images/GitHub-Mark-Light-32px.png"
-                    alt="github"
-                    width="22"
-                    className="mr-2"
-                  />
-                  Github code
-                </Button>
-              </Link>
+
+              <Button
+                variant="dark"
+                className="ml-4"
+                href="https://github.com/artworkjpm/react-site/blob/master/src/pages/react/Planets.js"
+                target="_blank"
+              >
+                <img
+                  src="images/GitHub-Mark-Light-32px.png"
+                  alt="github"
+                  width="22"
+                  className="mr-2"
+                />
+                Github code
+              </Button>
             </Card.Body>
           </Card>
         </Col>
