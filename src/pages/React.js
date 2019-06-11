@@ -8,7 +8,7 @@ const ReactView = () => {
       <h2 className="mt-5">React.js work</h2>
       <Button
         variant="dark"
-        href="https://github.com/artworkjpm/react-site/blob/master/src/pages/react/Planets.js"
+        href="https://github.com/artworkjpm/react-site/blob/master/src/pages/react/InterviewQuestions.md"
         target="_blank"
       >
         Interview questions
