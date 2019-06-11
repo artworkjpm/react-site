@@ -6,6 +6,13 @@ const ReactView = () => {
   return (
     <>
       <h2 className="mt-5">React.js work</h2>
+      <Button
+        variant="dark"
+        href="https://github.com/artworkjpm/react-site/blob/master/src/pages/react/Planets.js"
+        target="_blank"
+      >
+        Interview questions
+      </Button>
       <Row className="">
         <Col xs={12} md={6} className="mt-4">
           <Card>
