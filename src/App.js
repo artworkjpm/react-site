@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import ReactView from "./pages/React";
 import Planets from "./pages/react/Planets";
+import AppTesting from "./pages/testing/buttons";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -23,6 +24,7 @@ function App() {
             <Route exact path="/about" component={About} />
             <Route exact path="/react" component={ReactView} />
             <Route exact path="/react/planets" component={Planets} />
+            <Route exact path="/testing/buttons" component={AppTesting} />
             <Route component={NotFound} />
           </Switch>
         </Container>

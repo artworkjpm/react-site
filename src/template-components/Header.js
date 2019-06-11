@@ -23,27 +23,39 @@ const Header = () => {
           <Nav.Link as={Link} to="/angular">
             Angular
           </Nav.Link>
-          <Nav.Link as={Link} to="webdev">
+          <Nav.Link as={Link} to="/webdev">
             Web Dev
           </Nav.Link>
-          <Nav.Link as={Link} to="ux">
+          <Nav.Link as={Link} to="/ux">
             UX
           </Nav.Link>
-          <Nav.Link as={Link} to="crm">
+          <Nav.Link as={Link} to="/crm">
             CRM
           </Nav.Link>
-          <Nav.Link as={Link} to="graphic">
+          <Nav.Link as={Link} to="/graphic">
             Graphic Design
           </Nav.Link>
+          <Nav.Link
+            href="https://github.com/artworkjpm/react-site"
+            target="_blank"
+          >
+            This Github
+          </Nav.Link>
+          <NavDropdown title="Testing" id="basic-nav-dropdown">
+            <NavDropdown.Item as={Link} to="/testing/buttons">
+              Buttons
+            </NavDropdown.Item>
+          </NavDropdown>
+
           <NavDropdown title="Contact me" id="basic-nav-dropdown">
             <NavDropdown.Item as={Link} to="/linkedin">
               LinkedIn
             </NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="emailme">
+            <NavDropdown.Item as={Link} to="/emailme">
               Email Form
             </NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item as={Link} to="skypeme">
+            <NavDropdown.Item as={Link} to="/skypeme">
               Skype
             </NavDropdown.Item>
           </NavDropdown>

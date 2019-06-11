@@ -4,6 +4,7 @@
 body {
   height: 100%;
   position: relative;
+  background: #d9f6ff;
 }
 .container {
   min-height: 100vh; /* will cover the 100% of viewport */
@@ -18,6 +19,7 @@ body {
   width: 100%;
   text-align: center;
   padding-top: 20px;
+  color: #cacaca;
 }
 
 .carousel-indicators li {
