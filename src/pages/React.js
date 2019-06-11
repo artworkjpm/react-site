@@ -2,9 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Card, Row, Col, Button } from "react-bootstrap";
 
-const Cards = () => {
+const ReactView = () => {
   return (
     <>
+      <h2 className="mt-5">React.js work</h2>
       <Row className="">
         <Col xs={12} md={6} className="mt-4">
           <Card>
@@ -41,42 +42,7 @@ const Cards = () => {
           </Card>
         </Col>
       </Row>
-      <Row className="">
-        <Col xs={12} md={6} className="mt-4">
-          <Card>
-            <Card.Img variant="top" src="images/angular.jpg" />
-            <Card.Body>
-              <Card.Title>Angular.js work</Card.Title>
-              <Card.Text>
-                I started using Angular 1 in 2015, it was a revelation when it
-                first came out, using <code>ng</code> attributes directly into
-                the HTML to render different content. Since then I have done a
-                few projects with the latest version of Angular.
-              </Card.Text>
-              <Link to="/angular">
-                <Button variant="dark">Take a look</Button>
-              </Link>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col xs={12} md={6} className="mt-4">
-          <Card>
-            <Card.Img variant="top" src="images/wedev.jpg" />
-            <Card.Body>
-              <Card.Title>Web Dev work without libraries</Card.Title>
-              <Card.Text>
-                You don't always need to use a library of course, here are some
-                examples of what you can do with Vanilla JS, quite a lot as it
-                goes!
-              </Card.Text>
-              <Link to="/webdev">
-                <Button variant="dark">Take a look</Button>
-              </Link>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
     </>
   );
 };
-export default Cards;
+export default ReactView;

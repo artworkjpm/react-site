@@ -1,10 +1,11 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import NotFound from "./pages/NotFound";
 import Header from "./template-components/Header";
 import Footer from "./template-components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import NotFound from "./pages/NotFound";
+import ReactView from "./pages/React";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -19,6 +20,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
+            <Route path="/react" component={ReactView} />
             <Route component={NotFound} />
           </Switch>
         </Container>

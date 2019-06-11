@@ -53,7 +53,8 @@ const Media = () => {
             <span className="badge badge-dark mr-2">2010 - 2013</span>Moved down
             to Brighton to be nearer family, struggled to find a job in Graphic
             Design, got a job working for Sussex Police, creating Video
-            Identification. I was hired on the strength of my Photoshop skills.
+            Identification Parades. I was hired on the strength of my Photoshop
+            skills.
           </li>
           <li className="list-group-item">
             <span className="badge badge-dark mr-2">Jan 2013</span>Made the
@@ -85,17 +86,14 @@ const Media = () => {
           </li>
           <li className="list-group-item">
             <span className="badge badge-dark mr-2">2018</span>Started to learn
-            the basics of Vue.js, developed an interest in all things Javascript
+            the basics of React and Vue.js, developed an obsession/interest in
+            all things Javascript
           </li>
           <li className="list-group-item">
-            <span className="badge badge-dark mr-2">Jan 2019</span>Started
-            working for Software13, creating SPA's, adding new features to
-            exiting sites, using Angular and Vue.js
-          </li>
-          <li className="list-group-item">
-            <span className="badge badge-dark mr-2">Feb 2019 - Now</span>Loving
-            React after doing some React.js courses, built some small web apps,
-            learning Redux, continue using React...like this portfolio!
+            <span className="badge badge-dark mr-2">Jan 2019 - Now</span>Started
+            working Freelance Software13, creating SPA's, adding new features to
+            sites, using Angular and Vue.js. Completed the Treehouse intensive
+            React/Redux course, building React web apps
           </li>
         </ul>
       </div>
