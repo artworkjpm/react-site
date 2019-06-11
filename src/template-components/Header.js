@@ -1,14 +1,19 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
-      <Navbar.Brand href="/">JPM Portfolio</Navbar.Brand>
+      <Navbar.Brand as={Link} to="/">
+        JPM Portfolio
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="/about">About</Nav.Link>
+          <Nav.Link as={Link} to="/about">
+            About
+          </Nav.Link>
           <Nav.Link href="#link1">React</Nav.Link>
           <Nav.Link href="#link2">Vue</Nav.Link>
           <Nav.Link href="#link3">Angular</Nav.Link>

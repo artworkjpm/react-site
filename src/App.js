@@ -4,8 +4,9 @@ import Header from "./template-components/Header";
 import Footer from "./template-components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import NotFound from "./pages/NotFound";
 
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import "./stylesheets/Main.scss";
 
@@ -15,8 +16,11 @@ function App() {
       <Router>
         <Header />
         <Container>
-          <Route exact path="/" component={Home} />
-          <Route path="/about/" component={About} />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route component={NotFound} />
+          </Switch>
         </Container>
         <Footer />
       </Router>

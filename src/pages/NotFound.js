@@ -1,16 +1,16 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 
-const About = () => {
+export const NotFound = () => {
   return (
     <Row className="">
       <Col xs={12} md={8}>
         <div>
-          <h1>About me</h1>
+          <h1>Whoops, this url does not seem to work</h1>
         </div>
       </Col>
     </Row>
   );
 };
 
-export default About;
+export default NotFound;
