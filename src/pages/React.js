@@ -18,7 +18,7 @@ const ReactView = () => {
           <Card>
             <Card.Img variant="top" src="images/planets/Planet_alignment.jpg" />
             <Card.Body>
-              <Card.Title>My first React page!</Card.Title>
+              <Card.Title>Planets - my first React page!</Card.Title>
               <Card.Text>
                 Here is React in its purest form, an object array with data,
                 creating a jsx template, creating a component which maps that
