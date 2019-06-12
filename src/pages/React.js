@@ -13,6 +13,13 @@ const ReactView = () => {
       >
         Interview questions
       </Button>
+      <Button
+        variant="dark"
+        href="https://github.com/artworkjpm/react-site/blob/master/src/pages/react/InterviewQuestions.md"
+        target="_blank"
+      >
+        Testing React components
+      </Button>
       <Row className="">
         <Col xs={12} md={6} className="mt-4">
           <Card>
