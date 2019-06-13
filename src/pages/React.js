@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Card, Row, Col, Button } from "react-bootstrap";
+import GitButton from "./react/GitButton";
 
 const ReactView = () => {
   return (
@@ -10,6 +11,7 @@ const ReactView = () => {
         variant="dark"
         href="https://github.com/artworkjpm/react-site/blob/master/src/pages/react/InterviewQuestions.md"
         target="_blank"
+        className="mr-2"
       >
         Interview questions
       </Button>
@@ -37,39 +39,31 @@ const ReactView = () => {
               <Link to="/react/planets">
                 <Button variant="dark">Take a look</Button>
               </Link>
-
-              <Button
-                variant="dark"
-                className="ml-4"
-                href="https://github.com/artworkjpm/react-site/blob/master/src/pages/react/Planets.js"
-                target="_blank"
-              >
-                <img
-                  src="images/GitHub-Mark-Light-32px.png"
-                  alt="github"
-                  width="22"
-                  className="mr-2"
-                />
-                Github code
-              </Button>
+              <GitButton href="https://github.com/artworkjpm/react-site/blob/master/src/pages/react/Planets.js" />
             </Card.Body>
           </Card>
         </Col>
         <Col xs={12} md={6} className="mt-4">
           <Card>
-            <Card.Img variant="top" src="images/vuejs.jpeg" />
+            <Card.Img variant="top" src="images/react/order-explorer.png" />
             <Card.Body>
-              <Card.Title>Vue.js work</Card.Title>
+              <Card.Title>Order review app</Card.Title>
               <Card.Text>
-                I love Vue.js but not as much as React, I was impressed by how
-                similar it is to React and Angular, almost the best of both
-                libraries, I particularly like the Vue.js UI that comes when you
-                install Vue CLI. Here are some real life work examples I've done
-                using Vue/Vuex{" "}
+                <ul>
+                  <li>Uses an API to get images</li>
+                  <li>Handles amendments to orders</li>
+                  <li>Search feature</li>
+                </ul>
               </Card.Text>
-              <Link to="/vue">
-                <Button variant="dark">Take a look</Button>
-              </Link>
+
+              <Button
+                variant="dark"
+                href="https://order-explorer.netlify.com/"
+                target="_blank"
+              >
+                Take a look
+              </Button>
+              <GitButton href="https://github.com/artworkjpm/git_job_tests/tree/master/deporvillage/depor-app" />
             </Card.Body>
           </Card>
         </Col>
