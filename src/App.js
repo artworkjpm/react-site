@@ -7,6 +7,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import ReactView from "./pages/React";
 import Planets from "./pages/react/Planets";
+import Vue from "./pages/Vue";
+import Angular from "./pages/Angular";
 import AppTesting from "./pages/testing/buttons";
 import Bevendean from "./pages/Bevendean";
 
@@ -40,6 +42,9 @@ class App extends Component {
               <Route exact path="/about" component={About} />
               <Route exact path="/react" component={ReactView} />
               <Route exact path="/react/planets" component={Planets} />
+              <Route exact path="/vue" component={Vue} />
+              <Route exact path="/angular" component={Angular} />
+
               <Route exact path="/testing/buttons" component={AppTesting} />
 
               <Route

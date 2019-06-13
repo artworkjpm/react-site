@@ -4,9 +4,6 @@ import { Card, Row, Col } from "react-bootstrap";
 class Bevendean extends Component {
   componentWillMount() {
     this.props.hideNavigation();
-  }
-
-  componentDidMount() {
     document.body.classList.add("background-white");
   }
 

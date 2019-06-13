@@ -1,9 +1,15 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
 import { Card, Row, Col, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import GitButton from "./react/GitButton";
 
 const ReactView = () => {
+  useEffect(() => {
+    document.body.classList.add("bg-react");
+    return () => {
+      document.body.classList.remove("bg-react");
+    };
+  });
   return (
     <>
       <h2 className="mt-5">React.js work</h2>

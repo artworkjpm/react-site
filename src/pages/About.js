@@ -90,14 +90,17 @@ const About = () => {
               </li>
               <li>
                 <b>Practice, Practice, Practice, Fail, Fail, Fail:</b> Failing
-                and is a part of life. Failing lets you know where you need to
+                is a part of life. Failing lets you know where you need to
                 improve. I have failed in a lot of things but I try to learn
-                from it and improve what I did wrong.
+                from it and improve where I went wrong or learn what I was
+                lacking.
               </li>
               <li>
                 <b>Continuous learning:</b> I am always doing some kind of
                 online course, right now I'm learning more Vanilla JS with
-                GoMakeThings course and I'm doing a Treehouse Redux Course.
+                GoMakeThings course and I'm doing a Treehouse Redux Course. I
+                will try to make musical festival app soon, more details to be
+                announced on that idea.
               </li>
             </ul>
           </div>
