@@ -6,11 +6,11 @@ const Media = () => {
       <div className="media">
         <img src="./images/me.jpg" className="mr-3" alt="..." width="64" />
         <div className="media-body">
-          <h5 className="mt-0">Welcome to my portfolio</h5>
+          <h5 className="mt-0">Welcome to my portfolio!</h5>
           I'm a <b>Front-End Developer</b> living and working in{" "}
           <b>Barcelona</b>, I love all things <b>JavaScript</b> and continue to
-          learn new technologies of Front-End. I love React, Vue.js and Angular!
-          But probably React is my current favourite. <br />
+          learn new technologies of Front-End. I love React, Vue.js and Angular
+          but probably React is my current favourite. <br />
           <i>
             <b>Interesting fact:</b> I have a daughter here in Barcelona so have
             no plans to leave.
