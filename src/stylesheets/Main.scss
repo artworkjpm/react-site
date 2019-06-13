@@ -4,7 +4,8 @@
 body {
   height: 100%;
   position: relative;
-  background: #d7d7d7;
+  background: #2f2f2f;
+  color: white;
 }
 .container {
   min-height: 100vh; /* will cover the 100% of viewport */
@@ -31,4 +32,21 @@ body {
 
 .carousel-indicators li {
   margin-bottom: 10px;
+}
+
+.list-group-item {
+  background-color: #b6b6b6;
+  color: black;
+}
+
+.card-body {
+  color: #212529;
+}
+.bg-dark {
+  background-color: #000000 !important;
+}
+
+.badge-dark {
+  color: #fff;
+  background-color: #000000;
 }
