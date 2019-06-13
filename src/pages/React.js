@@ -17,7 +17,7 @@ const ReactView = () => {
       </Button>
       <Button
         variant="dark"
-        href="https://github.com/artworkjpm/react-site/blob/master/src/pages/react/InterviewQuestions.md"
+        href="https://github.com/artworkjpm/react-site/blob/master/src/pages/react/TestingReact.md"
         target="_blank"
       >
         Testing React components
@@ -29,12 +29,19 @@ const ReactView = () => {
             <Card.Body>
               <Card.Title>Planets - my first React page!</Card.Title>
               <Card.Text>
-                Here is React in its purest form, an object array with data,
-                creating a jsx template, creating a component which maps that
-                jsx and renders out the content. Also, you will get to read up
-                the essential facts of our solar system. I particularly liked
-                using the <code>(...planet)</code> spread operator, so I don't
-                need to list each prop name and value
+                <ul>
+                  <li>
+                    This is basic but I learnt some important React basics
+                  </li>
+                  <li>Learnt about jsx, using props and passing data</li>
+                  <li>
+                    First use of <code>array.map()</code> to print out json data
+                  </li>
+                  <li>
+                    Using <code>(...planet)</code> spread operator to avoid
+                    listing each prop on child component
+                  </li>
+                </ul>
               </Card.Text>
               <Link to="/react/planets">
                 <Button variant="dark">Take a look</Button>
