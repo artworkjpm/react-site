@@ -7,7 +7,7 @@ const Slider = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/images/react_img.png"
+          src="/images/main/react_img.png"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -20,7 +20,7 @@ const Slider = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/images/jsvanilla.jpg"
+          src="/images/main/jsvanilla.jpg"
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -35,7 +35,7 @@ const Slider = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/images/git.jpeg"
+          src="/images/main/git.jpeg"
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -47,7 +47,7 @@ const Slider = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/images/frameworks.jpg"
+          src="/images/main/frameworks.jpg"
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -62,7 +62,7 @@ const Slider = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/images/node.jpg"
+          src="/images/main/node.jpg"
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -76,7 +76,7 @@ const Slider = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/images/sass.jpg"
+          src="/images/main/sass.jpg"
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -90,7 +90,7 @@ const Slider = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/images/ux.jpg"
+          src="/images/main/ux.jpg"
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -104,7 +104,7 @@ const Slider = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/images/graphics.jpg"
+          src="/images/main/graphics.jpg"
           alt="Second slide"
         />
         <Carousel.Caption>

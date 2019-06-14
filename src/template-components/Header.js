@@ -32,7 +32,10 @@ const Header = () => {
           <Nav.Link as={Link} to="/crm">
             CRM
           </Nav.Link>
-          <Nav.Link as={Link} to="/graphic">
+          <Nav.Link
+            href="https://drive.google.com/file/d/1hZ5_CVsc8YF02QJXNB5F3MwLCZE0p-8n/view"
+            target="_blank"
+          >
             Graphic Design
           </Nav.Link>
           <Nav.Link

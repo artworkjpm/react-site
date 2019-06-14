@@ -4,7 +4,7 @@ const Media = () => {
   return (
     <div>
       <div className="media">
-        <img src="./images/me.jpg" className="mr-3" alt="..." width="64" />
+        <img src="./images/main/me.jpg" className="mr-3" alt="..." width="64" />
         <div className="media-body">
           <h5 className="mt-0">Welcome to my portfolio!</h5>
           I'm a <b>Front-End Developer</b> living and working in{" "}

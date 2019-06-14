@@ -9,6 +9,8 @@ import ReactView from "./pages/React";
 import Planets from "./pages/react/Planets";
 import Vue from "./pages/Vue";
 import Angular from "./pages/Angular";
+import Webdev from "./pages/WebDev";
+import UXExamples from "./pages/UX";
 import AppTesting from "./pages/testing/buttons";
 import Bevendean from "./pages/Bevendean";
 
@@ -44,6 +46,8 @@ class App extends Component {
               <Route exact path="/react/planets" component={Planets} />
               <Route exact path="/vue" component={Vue} />
               <Route exact path="/angular" component={Angular} />
+              <Route exact path="/webdev" component={Webdev} />
+              <Route exact path="/ux" component={UXExamples} />
 
               <Route exact path="/testing/buttons" component={AppTesting} />
 

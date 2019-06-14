@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 import { Card, Row, Col, Button } from "react-bootstrap";
 import GitButton from "./react/GitButton";
 
@@ -16,9 +15,9 @@ const Angular = () => {
       <Row className="">
         <Col xs={12} md={6} className="mt-4">
           <Card>
-            <Card.Img variant="top" src="images/planets/Planet_alignment.jpg" />
+            <Card.Img variant="top" src="images/angular/deathapp.jpg" />
             <Card.Body>
-              <Card.Title>Death App</Card.Title>
+              <Card.Title>Death App (Angular 1)</Card.Title>
               <Card.Text>
                 <ul>
                   <li>
@@ -26,44 +25,46 @@ const Angular = () => {
                     you will day based on real life health and life expectancy
                     records
                   </li>
-                  <li>Learnt about jsx, using props and passing data</li>
-                  <li>
-                    First use of <code>array.map()</code> to print out json data
-                  </li>
-                  <li>
-                    Using <code>(...planet)</code> spread operator to avoid
-                    listing each prop on child component
-                  </li>
-                </ul>
-              </Card.Text>
-              <Link to="/react/planets">
-                <Button variant="dark">Take a look</Button>
-              </Link>
-              <GitButton href="https://github.com/artworkjpm/react-site/blob/master/src/pages/react/Planets.js" />
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col xs={12} md={6} className="mt-4">
-          <Card>
-            <Card.Img variant="top" src="images/react/order-explorer.png" />
-            <Card.Body>
-              <Card.Title>Order review app</Card.Title>
-              <Card.Text>
-                <ul>
-                  <li>Uses an API to get images</li>
-                  <li>Handles amendments to orders</li>
-                  <li>Search feature</li>
+                  <li>Fancy css form styling</li>
                 </ul>
               </Card.Text>
 
               <Button
                 variant="dark"
-                href="https://order-explorer.netlify.com/"
+                href="https://deathapp.netlify.com/"
                 target="_blank"
               >
                 Take a look
               </Button>
-              <GitButton href="https://github.com/artworkjpm/git_job_tests/tree/master/deporvillage/depor-app" />
+
+              <GitButton href="https://github.com/artworkjpm/deathapp" />
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col xs={12} md={6} className="mt-4">
+          <Card>
+            <Card.Img variant="top" src="images/angular/restaurantzone.png" />
+            <Card.Body>
+              <Card.Title>restaurantzone new features</Card.Title>
+              <Card.Text>
+                <ul>
+                  <li>Implemented the code for the Aboutus page</li>
+                  <li>
+                    Created new components and features to large Angular 4
+                    website
+                  </li>
+                  <li>Worked with Typescript</li>
+                  <li>CSS animation on the Meet Our Team page</li>
+                </ul>
+              </Card.Text>
+
+              <Button
+                variant="dark"
+                href="https://therestaurantzone.com/aboutus"
+                target="_blank"
+              >
+                Take a look
+              </Button>
             </Card.Body>
           </Card>
         </Col>
