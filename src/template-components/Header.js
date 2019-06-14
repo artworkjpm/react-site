@@ -42,7 +42,13 @@ const Header = () => {
             href="https://github.com/artworkjpm/react-site"
             target="_blank"
           >
-            This Github
+            <img
+              src="images/main/GitHub-Mark-Light-32px.png"
+              alt="github"
+              width="22"
+              className="mr-1"
+            />
+            Repo
           </Nav.Link>
           <NavDropdown title="Testing" id="basic-nav-dropdown">
             <NavDropdown.Item as={Link} to="/testing/buttons">

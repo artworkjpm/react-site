@@ -5,8 +5,8 @@ const Footer = () => {
     <div className="footer alert-secondary bg-dark">
       <p>
         This site was create by JPM using <b>Create-React-App</b> and{" "}
-        <b>Bootstrap</b>. It was designed to be a quick and easy way to show my
-        work to potential employees and clients
+        <b>Bootstrap</b>, saved to a <b>Github repo</b> and auto deployed using{" "}
+        <b>Netlify</b>. All these tools are free and open source!
       </p>
     </div>
   );

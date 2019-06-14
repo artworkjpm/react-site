@@ -1,6 +1,5 @@
 import React from "react";
 import { Card, Row, Col, Button, Modal, Carousel } from "react-bootstrap";
-import GitButton from "./react/GitButton";
 
 class UXExamples extends React.Component {
   constructor(props, context) {
@@ -49,32 +48,8 @@ class UXExamples extends React.Component {
                 </Card.Text>
 
                 <Button variant="dark" onClick={this.handleShow}>
-                  Launch demo modal
+                  View UX projects
                 </Button>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col xs={12} md={6} className="mt-4">
-            <Card>
-              <Card.Img variant="top" src="images/react/order-explorer.png" />
-              <Card.Body>
-                <Card.Title>Order review app</Card.Title>
-                <Card.Text>
-                  <ul>
-                    <li>Uses an API to get images</li>
-                    <li>Handles amendments to orders</li>
-                    <li>Search feature</li>
-                  </ul>
-                </Card.Text>
-
-                <Button
-                  variant="dark"
-                  href="https://order-explorer.netlify.com/"
-                  target="_blank"
-                >
-                  Take a look
-                </Button>
-                <GitButton href="https://github.com/artworkjpm/git_job_tests/tree/master/deporvillage/depor-app" />
               </Card.Body>
             </Card>
           </Col>
@@ -101,37 +76,50 @@ class UXExamples extends React.Component {
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src="/images/ux/ux1.jpg"
+                  src="/images/ux/ux2.jpg"
                   alt="ux"
                 />
 
                 <Carousel.Caption>
-                  <b>Example 1:</b> Create js slider, move static content to
-                  slider
+                  <b>Example 2:</b> Change color scheme to make ticket types
+                  more clear
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src="/images/ux/ux1.jpg"
+                  src="/images/ux/ux3.jpg"
                   alt="ux"
                 />
 
                 <Carousel.Caption>
-                  <b>Example 1:</b> Create js slider, move static content to
-                  slider
+                  <b>Example 3:</b> Improve Compare Fares table, add tick, cross
+                  icons, use new color scheme, list out the airports that have
+                  the services (Fast track, Lounge)
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src="/images/ux/ux1.jpg"
+                  src="/images/ux/ux4.jpg"
                   alt="ux"
                 />
 
                 <Carousel.Caption>
-                  <b>Example 1:</b> Create js slider, move static content to
-                  slider
+                  <b>Example 4:</b> New icons to represent service included in
+                  ticket type
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="/images/ux/ux5.jpg"
+                  alt="ux"
+                />
+
+                <Carousel.Caption>
+                  <b>Example 5:</b> New icons and green ticks to make it clearer
+                  (on mobile)
                 </Carousel.Caption>
               </Carousel.Item>
             </Carousel>

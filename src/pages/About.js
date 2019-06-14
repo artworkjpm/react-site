@@ -163,8 +163,7 @@ class About extends React.Component {
                   <b>Practice, Practice, Practice, Fail, Fail, Fail:</b> Failing
                   is a part of life. Failing lets you know where you need to
                   improve. I have failed in a lot of things but I try to learn
-                  from it and improve where I went wrong or learn what I was
-                  lacking.
+                  from it and improve where I went wrong.
                 </li>
                 <li>
                   <b>Continuous learning:</b> I am always doing some kind of
