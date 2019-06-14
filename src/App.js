@@ -13,6 +13,7 @@ import Webdev from "./pages/WebDev";
 import UXExamples from "./pages/UX";
 import CRM from "./pages/CRM";
 import AppTesting from "./pages/testing/buttons";
+import EmailMe from "./pages/EmailMe";
 import Bevendean from "./pages/Bevendean";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -52,6 +53,7 @@ class App extends Component {
               <Route exact path="/crm" component={CRM} />
 
               <Route exact path="/testing/buttons" component={AppTesting} />
+              <Route exact path="/emailme" component={EmailMe} />
 
               <Route
                 exact

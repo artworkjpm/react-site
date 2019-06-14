@@ -42,7 +42,31 @@ const Webdev = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs={12} md={6} className="mt-4" />
+        <Col xs={12} md={6} className="mt-4">
+          <Card>
+            <Card.Img variant="top" src="images/webdev/mini-ui.jpg" />
+            <Card.Body>
+              <Card.Title>Norwegian Mini UI feature</Card.Title>
+              <Card.Text>
+                <ul>
+                  <li>One example of mini UI added to Norwegian website</li>
+                  <li>Jquery / Vanilla.js, no frameworks</li>
+                  <li>Completed in small time frame</li>
+                </ul>
+              </Card.Text>
+
+              <Button
+                variant="dark"
+                href="https://artworkjpm.github.io/Boehringer-Ingelheim/norwegian-demo/"
+                target="_blank"
+              >
+                Take a look
+              </Button>
+
+              <GitButton href="https://github.com/artworkjpm/Boehringer-Ingelheim/blob/master/norwegian-demo/index.html" />
+            </Card.Body>
+          </Card>
+        </Col>
       </Row>
     </>
   );

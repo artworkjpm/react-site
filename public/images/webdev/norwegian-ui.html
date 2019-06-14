@@ -1,0 +1,696 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.norwegian.com/style-bundle/cms-brand.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      .wrapper {
+        width: 800px;
+        margin: auto;
+        font-family: "Apercu", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        font-size: 14px !important;
+        color: #002a3a;
+        font-style: normal;
+        line-height: 1.4;
+      }
+      button:focus {
+        outline: 0 !important;
+      }
+      .triangle-left {
+        border-top: 13px solid transparent;
+        border-right: 8px solid #003251;
+        border-bottom: 13px solid transparent;
+        float: left;
+      }
+      .rectangle {
+        background: #003251;
+        white-space: nowrap;
+        padding: 6px 13px 0 31px;
+        float: left;
+        font-size: 12px;
+        font-weight: bold;
+        color: #fff;
+        height: 26px;
+      }
+      .top-right {
+        float: right;
+        margin-right: 10px;
+        font-size: 18px;
+      }
+      .ribbon {
+        position: absolute;
+        right: -6px;
+        bottom: 26px;
+      }
+      .fare-types {
+        display: flex;
+        background-color: #e3e3e3;
+        width: 100%;
+        font-size: 110%;
+      }
+      .compare {
+        flex: auto;
+        padding: 12px 40px 10px 15px;
+        background-color: #003251;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .dd {
+        flex: auto;
+        padding: 10px 0 10px 10px;
+        border-top: 3px solid #d81939;
+        font-weight: bold;
+        position: relative;
+        padding-bottom: 11px;
+      }
+      .dd::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        border-right: 1px solid #bbb;
+      }
+      .dd:nth-last-child(1)::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        border-right: none;
+      }
+      .meals-height {
+        margin-top: 4px;
+        width: 180px;
+      }
+      .asterix h4 {
+        margin-top: 14px;
+        font-size: 13px;
+        font-weight: 100;
+        line-height: 19px;
+        margin-bottom: 14px;
+        color: #003251;
+      }
+      .remove-marg {
+        margin-top: 0;
+      }
+      .col-dd div {
+        padding-bottom: 2px;
+      }
+      .prem {
+        border-top: 3px solid #003251;
+      }
+      .col-dd {
+        display: inline-grid;
+        margin-right: 20px;
+      }
+      .add-white-border {
+        border-bottom: none;
+        padding-bottom: 11px;
+        background-color: #fff;
+      }
+      .material-icons {
+        vertical-align: middle;
+        font-weight: bold;
+      }
+      .second-line {
+        margin-top: -1px;
+        font-size: 12px;
+        line-height: 13px;
+      }
+      .red {
+        color: #003251;
+      }
+      .ul-fares {
+        display: flex;
+      }
+      .show-rule {
+        display: none;
+      }
+      .show-fares-dd {
+        margin-bottom: 20px;
+      }
+      .lowfare-show,
+      .lowfare-plus-show,
+      .flex-show,
+      .premium-show,
+      .premium-flex-show {
+        position: relative;
+        background-color: #fff;
+        padding: 15px 5px 5px 20px;
+      }
+      .lowfare-plus-show::after {
+        width: 200px;
+        height: 100px;
+        background: red;
+      }
+      .desc-fare {
+        font-size: 18px;
+        margin-bottom: 10px !important;
+      }
+      .fa-star {
+        margin-right: 10px;
+        font-size: 17px;
+      }
+      .nas-components .sectionboxavaday .bodybox {
+        padding-top: 0;
+      }
+      .blue-norwegian {
+        color: #003251;
+        display: inline-flex;
+        padding-right: 30px;
+        margin-bottom: 2px;
+      }
+      .infoicon {
+        text-decoration: none;
+        cursor: auto;
+      }
+      .grey-norwegian {
+        color: #b7b7b7;
+        display: inline-flex;
+        padding-right: 30px;
+        margin-bottom: 2px;
+      }
+      .prem-seat-white {
+        background: url(https://www.norwegian.no/globalassets/ip/media/front/main/on-sale/icons/icons-20h/premium--seat--white--60x50.svg)
+          no-repeat;
+        background-size: contain;
+        vertical-align: middle;
+        height: 18px;
+        float: left;
+        width: 23px;
+        position: absolute;
+        left: 13px;
+        top: 5px;
+      }
+      .tick-green {
+        background: url(https://www.norwegian.no/globalassets/ip/media/front/main/on-sale/icons/icons-20h/positive--check--blue--50x50.svg)
+          no-repeat;
+        background-size: contain;
+        margin: 0 6px 1px 0;
+        display: inline-block;
+        vertical-align: middle;
+        height: 18px;
+        width: 18px;
+      }
+      .tick-grey {
+        background: url(https://www.norwegian.no/globalassets/ip/media/front/main/on-sale/icons/icons-20h/positive--check--grey--50x50.svg)
+          no-repeat;
+        background-size: contain;
+        margin: 0 6px 1px 0;
+        display: inline-block;
+        vertical-align: middle;
+        height: 18px;
+        width: 18px;
+      }
+      .ribbon-flex {
+        bottom: 70px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="fare-types">
+        <div class="compare"><i class="fa fa-star"></i>Compare fare type</div>
+        <button class="dd">
+          Lowfare<i class="material-icons">expand_more</i>
+        </button>
+        <button class="dd">
+          Lowfare+<i class="material-icons">expand_more</i>
+        </button>
+        <button class="dd">
+          Flex<i class="material-icons">expand_more</i>
+        </button>
+        <button class="dd prem">
+          Premium<i class="material-icons">expand_more</i>
+        </button>
+        <button class="dd prem">
+          PremiumFlex<i class="material-icons">expand_more</i>
+        </button>
+      </div>
+      <div class="show-fares-dd">
+        <div class="show-rule lowfare-show">
+          <button class="fa fa-times top-right"></button>
+          <h3 class="desc-fare">What does Lowfare include?</h3>
+          <div class="col-dd">
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">Hand baggage (10kg)</div>
+            </div>
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">Wi-Fi*</div>
+            </div>
+            <div class="grey-norwegian">
+              <div class="left-dd"><i class="tick-grey"></i></div>
+              <div class="right-dd">Checked baggage (20kg)</div>
+            </div>
+          </div>
+          <div class="col-dd">
+            <div class="grey-norwegian">
+              <div class="left-dd"><i class="tick-grey"></i></div>
+              <div class="right-dd">
+                Seat reservation
+                <div class="second-line">
+                  STANDARD LEG ROOM <br />
+                  78cm (31in)
+                </div>
+              </div>
+            </div>
+            <div class="grey-norwegian meals-height">
+              <div class="left-dd"><i class="tick-grey"></i></div>
+              <div class="right-dd">
+                Meals
+                <div class="second-line">STANDARD MENU</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-dd">
+            <div class="grey-norwegian">
+              <div class="left-dd"><i class="tick-grey"></i></div>
+              <div class="right-dd">Fast Track*</div>
+            </div>
+            <div class="grey-norwegian">
+              <div class="left-dd"><i class="tick-grey"></i></div>
+              <div class="right-dd">Lounge*</div>
+            </div>
+            <div class="grey-norwegian">
+              <div class="left-dd"><i class="tick-grey"></i></div>
+              <div class="right-dd">Changes</div>
+            </div>
+          </div>
+          <div class="col-dd">
+            <div class="grey-norwegian">
+              <div class="left-dd"><i class="tick-grey"></i></div>
+              <div class="right-dd">Refundable</div>
+            </div>
+            <div class="grey-norwegian">
+              <div class="left-dd"><i class="tick-grey"></i></div>
+              <div class="right-dd">Priority boarding</div>
+            </div>
+          </div>
+          <div class="asterix">
+            <h4><strong>*Wi-Fi</strong> is available on most flights.</h4>
+          </div>
+          <div class="ribbon">
+            <div class="triangle-left"></div>
+            <div class="prem-seat-white"></div>
+            <div class="rectangle">ENJOY EXTRA LEG ROOM WITH PREMIUM</div>
+          </div>
+        </div>
+        <div class="show-rule lowfare-plus-show">
+          <button class="fa fa-times top-right"></button>
+          <h3 class="desc-fare">What does Lowfare+ include?</h3>
+          <div class="col-dd">
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">Hand baggage (10kg)</div>
+            </div>
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">Wi-Fi*</div>
+            </div>
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">Checked baggage (20kg)</div>
+            </div>
+          </div>
+          <div class="col-dd">
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">
+                Seat reservation
+                <div class="second-line">
+                  STANDARD LEG ROOM <br />
+                  78cm (31in)
+                </div>
+              </div>
+            </div>
+            <div class="blue-norwegian meals-height">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">
+                Meals
+                <div class="second-line">STANDARD MENU</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-dd">
+            <div class="grey-norwegian">
+              <div class="left-dd"><i class="tick-grey"></i></div>
+              <div class="right-dd">Fast Track*</div>
+            </div>
+            <div class="grey-norwegian">
+              <div class="left-dd"><i class="tick-grey"></i></div>
+              <div class="right-dd">Lounge*</div>
+            </div>
+            <div class="grey-norwegian">
+              <div class="left-dd"><i class="tick-grey"></i></div>
+              <div class="right-dd">Changes</div>
+            </div>
+          </div>
+          <div class="col-dd">
+            <div class="grey-norwegian">
+              <div class="left-dd"><i class="tick-grey"></i></div>
+              <div class="right-dd">Refundable</div>
+            </div>
+            <div class="grey-norwegian">
+              <div class="left-dd"><i class="tick-grey"></i></div>
+              <div class="right-dd">Priority boarding</div>
+            </div>
+          </div>
+          <div class="asterix">
+            <h4><strong>*Wi-Fi</strong> is available on most flights.</h4>
+          </div>
+          <div class="ribbon">
+            <div class="triangle-left"></div>
+            <div class="prem-seat-white"></div>
+            <div class="rectangle">ENJOY EXTRA LEG ROOM WITH PREMIUM</div>
+          </div>
+        </div>
+        <div class="show-rule flex-show">
+          <button class="fa fa-times top-right"></button>
+          <h3 class="desc-fare">What does Flex include?</h3>
+          <div class="col-dd">
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">Hand baggage (10kg)</div>
+            </div>
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">Wi-Fi*</div>
+            </div>
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">Checked baggage (20kg)</div>
+            </div>
+          </div>
+          <div class="col-dd">
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">
+                Seat reservation
+                <div class="second-line">
+                  STANDARD LEG ROOM <br />
+                  78cm (31in)
+                </div>
+              </div>
+            </div>
+            <div class="blue-norwegian meals-height">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">
+                Meals
+                <div class="second-line">STANDARD MENU</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-dd">
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">Fast Track*</div>
+            </div>
+            <div class="grey-norwegian">
+              <div class="left-dd"><i class="tick-grey"></i></div>
+              <div class="right-dd">Lounge*</div>
+            </div>
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">Changes</div>
+            </div>
+          </div>
+          <div class="col-dd">
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">Refundable</div>
+            </div>
+            <div class="grey-norwegian">
+              <div class="left-dd"><i class="tick-grey"></i></div>
+              <div class="right-dd">Priority boarding</div>
+            </div>
+          </div>
+          <div class="asterix">
+            <h4>
+              <strong>*Wi-Fi</strong> is available on most flights.<br />
+              <strong>*Fast Track</strong> through security control is available
+              in Oslo Gardermoen, Bergen, Stavanger, Trondheim, Bodø, Tromsø,
+              Ålesund, Stockholm Arlanda, Göteborg Landvetter, Malmö,
+              Copenhagen, Aalborg, Helsinki, Barcelona, Alicante, Malaga, Palma
+              de Mallorca.
+            </h4>
+          </div>
+          <div class="ribbon ribbon-flex">
+            <div class="triangle-left"></div>
+            <div class="prem-seat-white"></div>
+            <div class="rectangle">ENJOY EXTRA LEG ROOM WITH PREMIUM</div>
+          </div>
+        </div>
+        <div class="show-rule premium-show">
+          <button class="fa fa-times top-right"></button>
+          <h3 class="desc-fare">What does Premium include?</h3>
+          <div class="col-dd">
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">Hand baggage (10kg)</div>
+            </div>
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">Wi-Fi*</div>
+            </div>
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">
+                Checked baggage
+                <div class="second-line red">2 x 20kg BAGS</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-dd">
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">
+                Seat reservation
+                <div class="second-line red">
+                  EXTRA LEG ROOM <br />
+                  109-117cm (43-46in)
+                </div>
+              </div>
+            </div>
+            <div class="blue-norwegian meals-height">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">
+                Meals
+                <div class="second-line red">PREMIUM MENU</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-dd">
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">Fast Track*</div>
+            </div>
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">Lounge*</div>
+            </div>
+            <div class="grey-norwegian">
+              <div class="left-dd"><i class="tick-grey"></i></div>
+              <div class="right-dd">Changes</div>
+            </div>
+          </div>
+          <div class="col-dd">
+            <div class="grey-norwegian">
+              <div class="left-dd"><i class="tick-grey"></i></div>
+              <div class="right-dd">Refundable</div>
+            </div>
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">Priority boarding</div>
+            </div>
+          </div>
+          <div class="asterix">
+            <h4>
+              <strong>*Wi-Fi</strong> is available on most flights.<br />
+              <strong>*Fast Track</strong> through security control is available
+              in Oslo Gardermoen, Bergen, Stavanger, Trondheim, Bodø, Tromsø,
+              Ålesund, Stockholm Arlanda, Göteborg Landvetter, Malmö,
+              Copenhagen, Aalborg, Helsinki, Barcelona, Alicante, Malaga, Palma
+              de Mallorca.<br />
+              <strong>*Lounge</strong> access available in London Gatwick,
+              Bangkok, Barcelona, Boston Logan, Copenhagen, Los Angeles, New
+              York (JFK), New York (EWR), Oakland, Oslo, Paris (CDG), Seattle,
+              Stockholm.
+            </h4>
+          </div>
+        </div>
+        <div class="show-rule premium-flex-show">
+          <button class="fa fa-times top-right"></button>
+          <h3 class="desc-fare">What does PremiumFlex include?</h3>
+          <div class="col-dd">
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">Hand baggage (10kg)</div>
+            </div>
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">Wi-Fi*</div>
+            </div>
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">
+                Checked baggage
+                <div class="second-line red">2 x 20kg BAGS</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-dd">
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">
+                Seat reservation
+                <div class="second-line red">
+                  EXTRA LEG ROOM <br />
+                  109-117cm (43-46in)
+                </div>
+              </div>
+            </div>
+            <div class="blue-norwegian meals-height">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">
+                Meals
+                <div class="second-line red">PREMIUM MENU</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-dd">
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">Fast Track*</div>
+            </div>
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">Lounge*</div>
+            </div>
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">Changes</div>
+            </div>
+          </div>
+          <div class="col-dd">
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">Refundable</div>
+            </div>
+            <div class="blue-norwegian">
+              <div class="left-dd"><i class="tick-green"></i></div>
+              <div class="right-dd">Priority boarding</div>
+            </div>
+          </div>
+          <div class="asterix">
+            <h4>
+              <strong>*Wi-Fi</strong> is available on most flights.<br />
+              <strong>*Fast Track</strong> through security control is available
+              in Oslo Gardermoen, Bergen, Stavanger, Trondheim, Bodø, Tromsø,
+              Ålesund, Stockholm Arlanda, Göteborg Landvetter, Malmö,
+              Copenhagen, Aalborg, Helsinki, Barcelona, Alicante, Malaga, Palma
+              de Mallorca.<br />
+              <strong>*Lounge</strong> access available in London Gatwick,
+              Bangkok, Barcelona, Boston Logan, Copenhagen, Los Angeles, New
+              York (JFK), New York (EWR), Oakland, Oslo, Paris (CDG), Seattle,
+              Stockholm.
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="application/javascript">
+      $("button.dd").click(function() {
+        icon = $(this)
+          .find("i.material-icons")
+          .text();
+        button_text = this.childNodes[0].nodeValue;
+        if (icon === "expand_more") {
+          $("i.material-icons").text("expand_more");
+          $(this)
+            .find("i")
+            .text("expand_less");
+          $("button.dd").removeClass("add-white-border");
+          $(this).addClass("add-white-border");
+        } else {
+          $(this)
+            .find("i")
+            .text("expand_more");
+          $("button.dd").removeClass("add-white-border");
+        }
+        if (button_text === "Lowfare" && $(".lowfare-show").is(":hidden")) {
+          $(".lowfare-show").show();
+        } else {
+          $(".lowfare-show").hide();
+        }
+        if (
+          button_text === "Lowfare+" &&
+          $(".lowfare-plus-show").is(":hidden")
+        ) {
+          $(".lowfare-plus-show").show();
+        } else {
+          $(".lowfare-plus-show").hide();
+        }
+        if (button_text === "Flex" && $(".flex-show").is(":hidden")) {
+          $(".flex-show").show();
+        } else {
+          $(".flex-show").hide();
+        }
+        if (button_text === "Premium" && $(".premium-show").is(":hidden")) {
+          $(".premium-show").show();
+        } else {
+          $(".premium-show").hide();
+        }
+        if (
+          button_text === "PremiumFlex" &&
+          $(".premium-flex-show").is(":hidden")
+        ) {
+          $(".premium-flex-show").show();
+        } else {
+          $(".premium-flex-show").hide();
+        }
+        $("button.top-right").click(function() {
+          $(
+            ".lowfare-show, .lowfare-plus-show, .flex-show, .premium-show, .premium-flex-show"
+          ).hide();
+          $("button.dd").removeClass("add-white-border");
+          $("button.dd")
+            .find("i")
+            .text("expand_more");
+        });
+      });
+      $(
+        ".statictooltipclick.ToolTipLHCompare.pricetable, .statictooltipclick.ToolTipSHCompare.pricetable"
+      ).remove();
+      $(
+        "td.statictooltipclick.ToolTipLHCompare, td.statictooltipclick.ToolTipSHCompare"
+      ).removeClass("ToolTipLHCompare ToolTipSHCompare");
+
+      $(".fare-types .compare").click(function() {
+        $("button.dd:eq(0)").click();
+      });
+    </script>
+  </body>
+</html>
