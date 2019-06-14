@@ -57,15 +57,15 @@ const Header = () => {
           </NavDropdown>
 
           <NavDropdown title="Contact me" id="basic-nav-dropdown">
-            <NavDropdown.Item as={Link} to="/linkedin">
-              LinkedIn
-            </NavDropdown.Item>
             <NavDropdown.Item as={Link} to="/emailme">
-              Email Form
+              Email/Skype/Telephone
             </NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item as={Link} to="/skypeme">
-              Skype
+            <NavDropdown.Item
+              href="https://www.linkedin.com/in/artworkjpm/"
+              target="_blank"
+            >
+              LinkedIn Profile
             </NavDropdown.Item>
           </NavDropdown>
         </Nav>
