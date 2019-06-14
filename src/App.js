@@ -14,7 +14,7 @@ import Bevendean from "./pages/Bevendean";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import "./stylesheets/Main.scss";
+import "./stylesheets/App.scss";
 
 class App extends Component {
   constructor(props) {

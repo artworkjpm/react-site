@@ -104,7 +104,7 @@ const Slider = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/images/graphic-design.png"
+          src="/images/graphics.jpg"
           alt="Second slide"
         />
         <Carousel.Caption>
