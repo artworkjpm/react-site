@@ -62,11 +62,14 @@ class About extends React.Component {
                 I first used jquery in 2013 and have been using Vanilla JS full
                 time since 2018
               </li>
-              <li>I have styled many professional sites using SASS/CSS3</li>
               <li>
-                I'm currently looking for a new job in Barcelona in Front-End
-                Development, I am work in UX, making wireframes if needed. I am
-                also to code emails in the CRM team if needed.
+                I have styled many professional sites using SASS/CSS3, have
+                worked in the 3 major frameworks (although React and Vue are my
+                favourite)
+              </li>
+              <li>
+                I'm currently looking for a new job in Barcelona in doing
+                Front-End development, UX design/development, CRM development.
               </li>
             </ul>
           </Col>

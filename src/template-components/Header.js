@@ -60,6 +60,12 @@ const Header = () => {
             <NavDropdown.Item as={Link} to="/emailme">
               Email/Skype/Telephone
             </NavDropdown.Item>
+            <NavDropdown.Item
+              href="http://journeyofjpm.blogspot.com/"
+              target="_blank"
+            >
+              My blog
+            </NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item
               href="https://www.linkedin.com/in/artworkjpm/"
