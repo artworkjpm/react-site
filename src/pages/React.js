@@ -31,28 +31,26 @@ const ReactView = () => {
       <Row className="">
         <Col xs={12} md={6} className="mt-4">
           <Card>
-            <Card.Img variant="top" src="images/planets/Planet_alignment.jpg" />
+            <Card.Img variant="top" src="images/react/car-locator.png" />
             <Card.Body>
-              <Card.Title>Planets - my first React page!</Card.Title>
+              <Card.Title>React with Google maps</Card.Title>
               <Card.Text>
                 <ul>
-                  <li>
-                    This is basic but I learnt some important React basics
-                  </li>
-                  <li>Learnt about jsx, using props and passing data</li>
-                  <li>
-                    First use of <code>array.map()</code> to print out json data
-                  </li>
-                  <li>
-                    Using <code>(...planet)</code> spread operator to avoid
-                    listing each prop on child component
-                  </li>
+                  <li>Map out coordinates from json into google maps</li>
+                  <li>Using bespoke map placemarkers</li>
+                  <li>Display table data in a easy to read / app/ way.</li>
                 </ul>
               </Card.Text>
-              <Link to="/react/planets">
-                <Button variant="dark">Take a look</Button>
-              </Link>
-              <GitButton href="https://github.com/artworkjpm/react-site/blob/master/src/pages/react/Planets.js" />
+
+              <Button
+                variant="dark"
+                href="https://react-car-locator.netlify.com/"
+                target="_blank"
+              >
+                Take a look
+              </Button>
+
+              <GitButton href="https://github.com/artworkjpm/react-app-car-locator" />
             </Card.Body>
           </Card>
         </Col>
@@ -77,6 +75,35 @@ const ReactView = () => {
                 Take a look
               </Button>
               <GitButton href="https://github.com/artworkjpm/git_job_tests/tree/master/deporvillage/depor-app" />
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+      <Row className="">
+        <Col xs={12} md={6} className="mt-4">
+          <Card>
+            <Card.Img variant="top" src="images/planets/Planet_alignment.jpg" />
+            <Card.Body>
+              <Card.Title>Planets - my first React page!</Card.Title>
+              <Card.Text>
+                <ul>
+                  <li>
+                    This is basic but I learnt some important React basics
+                  </li>
+                  <li>Learnt about jsx, using props and passing data</li>
+                  <li>
+                    First use of <code>array.map()</code> to print out json data
+                  </li>
+                  <li>
+                    Using <code>(...planet)</code> spread operator to avoid
+                    listing each prop on child component
+                  </li>
+                </ul>
+              </Card.Text>
+              <Link to="/react/planets">
+                <Button variant="dark">Take a look</Button>
+              </Link>
+              <GitButton href="https://github.com/artworkjpm/react-site/blob/master/src/pages/react/Planets.js" />
             </Card.Body>
           </Card>
         </Col>

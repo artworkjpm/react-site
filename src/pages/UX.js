@@ -69,8 +69,10 @@ class UXExamples extends React.Component {
                 />
 
                 <Carousel.Caption>
-                  <b>Example 1:</b> Create js slider, move static content to
-                  slider
+                  <p>
+                    <b>Example 1:</b> Create js slider, move static content to
+                    slider
+                  </p>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
@@ -81,8 +83,10 @@ class UXExamples extends React.Component {
                 />
 
                 <Carousel.Caption>
-                  <b>Example 2:</b> Change color scheme to make ticket types
-                  more clear
+                  <p>
+                    <b>Example 2:</b> Change color scheme to make ticket types
+                    more clear
+                  </p>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
@@ -93,9 +97,11 @@ class UXExamples extends React.Component {
                 />
 
                 <Carousel.Caption>
-                  <b>Example 3:</b> Improve Compare Fares table, add tick, cross
-                  icons, use new color scheme, list out the airports that have
-                  the services (Fast track, Lounge)
+                  <p>
+                    <b>Example 3:</b> Improve Compare Fares table, add tick,
+                    cross icons, use new color scheme, list out the airports
+                    that have the services (Fast track, Lounge)
+                  </p>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
@@ -106,8 +112,10 @@ class UXExamples extends React.Component {
                 />
 
                 <Carousel.Caption>
-                  <b>Example 4:</b> New icons to represent service included in
-                  ticket type
+                  <p>
+                    <b>Example 4:</b> New icons to represent service included in
+                    ticket type
+                  </p>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
@@ -118,8 +126,10 @@ class UXExamples extends React.Component {
                 />
 
                 <Carousel.Caption>
-                  <b>Example 5:</b> New icons and green ticks to make it clearer
-                  (on mobile)
+                  <p>
+                    <b>Example 5:</b> New icons and green ticks to make it
+                    clearer (on mobile)
+                  </p>
                 </Carousel.Caption>
               </Carousel.Item>
             </Carousel>
