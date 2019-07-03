@@ -33,10 +33,7 @@ const ReactView = () => {
           <Card>
             <Card.Img variant="top" src="images/react/glasto.png" />
             <Card.Body>
-              <Card.Title>
-                Clipify app - instantly listen to groups on music festival
-                listings
-              </Card.Title>
+              <Card.Title>Clipify app - instantly listen to music</Card.Title>
               <Card.Text>
                 <ul>
                   <li>
