@@ -31,26 +31,35 @@ const ReactView = () => {
       <Row className="">
         <Col xs={12} md={6} className="mt-4">
           <Card>
-            <Card.Img variant="top" src="images/react/car-locator.png" />
+            <Card.Img variant="top" src="images/react/glasto.png" />
             <Card.Body>
-              <Card.Title>React with Google maps</Card.Title>
+              <Card.Title>
+                Clipify app - instantly listen to groups from music festival
+                listings
+              </Card.Title>
               <Card.Text>
                 <ul>
-                  <li>Map out coordinates from json into google maps</li>
-                  <li>Using bespoke map placemarkers</li>
-                  <li>Display table data in a easy to read / app/ way.</li>
+                  <li>
+                    Using Spotify API I created a way to listen to bands on
+                    Music festivals
+                  </li>
+                  <li>My most complex project to date, using React</li>
+                  <li>
+                    Listen to Glastonbury 2019 immediately from the app, more
+                    festivals to come!
+                  </li>
                 </ul>
               </Card.Text>
 
               <Button
                 variant="dark"
-                href="https://react-car-locator.netlify.com/"
+                href="https://clipify-backend.herokuapp.com/login"
                 target="_blank"
               >
                 Take a look
               </Button>
 
-              <GitButton href="https://github.com/artworkjpm/react-app-car-locator" />
+              <GitButton href="https://github.com/artworkjpm/spotify-calls" />
             </Card.Body>
           </Card>
         </Col>
@@ -104,6 +113,31 @@ const ReactView = () => {
                 <Button variant="dark">Take a look</Button>
               </Link>
               <GitButton href="https://github.com/artworkjpm/react-site/blob/master/src/pages/react/Planets.js" />
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col xs={12} md={6} className="mt-4">
+          <Card>
+            <Card.Img variant="top" src="images/react/car-locator.png" />
+            <Card.Body>
+              <Card.Title>React with Google maps</Card.Title>
+              <Card.Text>
+                <ul>
+                  <li>Map out coordinates from json into google maps</li>
+                  <li>Using bespoke map placemarkers</li>
+                  <li>Display table data in a easy to read / app/ way.</li>
+                </ul>
+              </Card.Text>
+
+              <Button
+                variant="dark"
+                href="https://react-car-locator.netlify.com/"
+                target="_blank"
+              >
+                Take a look
+              </Button>
+
+              <GitButton href="https://github.com/artworkjpm/react-app-car-locator" />
             </Card.Body>
           </Card>
         </Col>
