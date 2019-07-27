@@ -13,18 +13,17 @@ const CRM = () => {
             <Card.Img variant="top" src="images/crm/module_guide.png" />
             <Card.Body>
               <Card.Title>Norwegian Airlines CRM work</Card.Title>
-              <Card.Text>
-                <ul>
-                  <li>
-                    Using Oracle Responsys we put email components into modules,
-                    eg hero, body.
-                  </li>
-                  <li>Mobile first templates</li>
-                  <li>
-                    Work well on email browsers, using Email on Acid to fix bugs
-                  </li>
-                </ul>
-              </Card.Text>
+
+              <ul>
+                <li>
+                  Using Oracle Responsys we put email components into modules,
+                  eg hero, body.
+                </li>
+                <li>Mobile first templates</li>
+                <li>
+                  Work well on email browsers, using Email on Acid to fix bugs
+                </li>
+              </ul>
 
               <Button
                 variant="dark"
@@ -41,18 +40,16 @@ const CRM = () => {
             <Card.Img variant="top" src="images/crm/email-example.png" />
             <Card.Body>
               <Card.Title>Email development example</Card.Title>
-              <Card.Text>
-                <ul>
-                  <li>
-                    Example of how coding emails is different to normal html
-                    pages
-                  </li>
-                  <li>
-                    I am aware of the issues of email coding, microsoft office
-                    render issues etc
-                  </li>
-                </ul>
-              </Card.Text>
+
+              <ul>
+                <li>
+                  Example of how coding emails is different to normal html pages
+                </li>
+                <li>
+                  I am aware of the issues of email coding, microsoft office
+                  render issues etc
+                </li>
+              </ul>
 
               <Button
                 variant="dark"

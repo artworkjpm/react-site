@@ -20,12 +20,20 @@ const Angular = () => {
               <Card.Title>Photo game for babies / children</Card.Title>
               <ul>
                 <li>
-                  Using <b>pixabay.com</b> API to create a nice game to learn words and associate photos with the clue words
+                  Using <b>pixabay.com</b> API to create a nice game to learn
+                  words and associate photos with the clue words
                 </li>
-                <li>Search for a thing, place, type or let the search work randomly</li>
+                <li>
+                  Search for a thing, place, type or let the search work
+                  randomly
+                </li>
                 <li>Using Angular Service to implement API endpoints</li>
               </ul>
-              <Button variant="dark" href="https://artworkjpm.github.io/jm-game-app-angular/" target="_blank">
+              <Button
+                variant="dark"
+                href="https://artworkjpm.github.io/jm-game-app-angular/"
+                target="_blank"
+              >
                 Take a look
               </Button>
 
@@ -40,12 +48,21 @@ const Angular = () => {
               <Card.Title>Brew Dog Beers Gallery</Card.Title>
               <ul>
                 <li>
-                  Do you like Craft beers? Using <b>Angular 6 and the Punk API (https://punkapi.com)</b> take a look at The Brew Dog beers, with details about their flavours, what
-                  food they match and more.
+                  Do you like Craft beers? Using{" "}
+                  <b>Angular 6 and the Punk API (https://punkapi.com)</b> take a
+                  look at The Brew Dog beers, with details about their flavours,
+                  what food they match and more.
                 </li>
-                <li>Using Input Search feature, Pagination, routing each beer to its own description page.</li>
+                <li>
+                  Using Input Search feature, Pagination, routing each beer to
+                  its own description page.
+                </li>
               </ul>
-              <Button variant="dark" href="https://artworkjpm.github.io/haufe-beers/beers" target="_blank">
+              <Button
+                variant="dark"
+                href="https://artworkjpm.github.io/haufe-beers/beers"
+                target="_blank"
+              >
                 Take a look
               </Button>
 
@@ -60,11 +77,17 @@ const Angular = () => {
               <Card.Title>restaurantzone new features</Card.Title>
               <ul>
                 <li>Implemented the code for the Aboutus page</li>
-                <li>Created new components and features to large Angular 4 website</li>
+                <li>
+                  Created new components and features to large Angular 4 website
+                </li>
                 <li>Worked with Typescript</li>
                 <li>CSS animation on the Meet Our Team page</li>
               </ul>
-              <Button variant="dark" href="https://therestaurantzone.com/aboutus" target="_blank">
+              <Button
+                variant="dark"
+                href="https://therestaurantzone.com/aboutus"
+                target="_blank"
+              >
                 Take a look
               </Button>
             </Card.Body>
@@ -78,10 +101,17 @@ const Angular = () => {
             <Card.Body>
               <Card.Title>Death App (Angular 1)</Card.Title>
               <ul>
-                <li>My introduction to Angular, discover an estimation of when you will day based on real life health and life expectancy records</li>
+                <li>
+                  My introduction to Angular, discover an estimation of when you
+                  will day based on real life health and life expectancy records
+                </li>
                 <li>Fancy css form styling</li>
               </ul>
-              <Button variant="dark" href="https://deathapp.netlify.com/" target="_blank">
+              <Button
+                variant="dark"
+                href="https://deathapp.netlify.com/"
+                target="_blank"
+              >
                 Take a look
               </Button>
 

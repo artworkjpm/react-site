@@ -20,19 +20,18 @@ const Vue = () => {
             <Card.Img variant="top" src="images/vue/quotes.jpg" />
             <Card.Body>
               <Card.Title>Conveyance Quotes Questionaire</Card.Title>
-              <Card.Text>
-                <ul>
-                  <li>Added data via js objects and arrays</li>
-                  <li>Questions change based on previous answer</li>
-                  <li>
-                    I like Vues expressions inside html like <code>v-if=</code>
-                  </li>
-                  <li>
-                    Input Form validation, responsive styling, API calls for
-                    British postcode and number validation
-                  </li>
-                </ul>
-              </Card.Text>
+
+              <ul>
+                <li>Added data via js objects and arrays</li>
+                <li>Questions change based on previous answer</li>
+                <li>
+                  I like Vues expressions inside html like <code>v-if=</code>
+                </li>
+                <li>
+                  Input Form validation, responsive styling, API calls for
+                  British postcode and number validation
+                </li>
+              </ul>
 
               <Button
                 variant="dark"
@@ -51,16 +50,15 @@ const Vue = () => {
             <Card.Img variant="top" src="images/vue/vuex.jpg" />
             <Card.Body>
               <Card.Title>Vuex shopping app</Card.Title>
-              <Card.Text>
-                <ul>
-                  <li>Introduction to using Vuex, similar to Redux</li>
-                  <li>Calculates discounts for the day</li>
-                  <li>
-                    My first exposure to Vuex store single state of truth, new
-                    functions and methods learned.
-                  </li>
-                </ul>
-              </Card.Text>
+
+              <ul>
+                <li>Introduction to using Vuex, similar to Redux</li>
+                <li>Calculates discounts for the day</li>
+                <li>
+                  My first exposure to Vuex store single state of truth, new
+                  functions and methods learned.
+                </li>
+              </ul>
 
               <Button
                 variant="dark"

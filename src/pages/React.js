@@ -13,44 +13,49 @@ const ReactView = () => {
   return (
     <>
       <h2 className="mt-5">React.js work</h2>
-      <Button
-        variant="dark"
-        href="https://github.com/artworkjpm/react-site/blob/master/src/pages/react/InterviewQuestions.md"
-        target="_blank"
-        className="mr-2"
-      >
-        Interview questions
-      </Button>
-      <Button
-        variant="dark"
-        href="https://github.com/artworkjpm/react-site/blob/master/src/pages/react/TestingReact.md"
-        target="_blank"
-      >
-        Testing React components
-      </Button>
+      <Row className="">
+        <Col xs={12} md={6} className="mt-4">
+          <Button
+            variant="dark"
+            href="https://github.com/artworkjpm/react-site/blob/master/src/pages/react/InterviewQuestions.md"
+            target="_blank"
+            className="mr-2"
+          >
+            Interview questions
+          </Button>
+        </Col>
+        <Col xs={12} md={6} className="mt-4">
+          <Button
+            variant="dark"
+            href="https://github.com/artworkjpm/react-site/blob/master/src/pages/react/TestingReact.md"
+            target="_blank"
+          >
+            Testing React components
+          </Button>
+        </Col>
+      </Row>
       <Row className="">
         <Col xs={12} md={6} className="mt-4">
           <Card>
             <Card.Img variant="top" src="images/react/glasto.png" />
             <Card.Body>
               <Card.Title>Clipify app - instantly listen to music</Card.Title>
-              <Card.Text>
-                <ul>
-                  <li>
-                    Using Spotify API to listen to bands on music listings,
-                    removing the annoyance to copy, paste and select through the
-                    spotify app
-                  </li>
-                  <li>
-                    My most complex project to date, using React, a backend
-                    OAUTH server and HEROKUAPP
-                  </li>
-                  <li>
-                    Listen to Glastonbury 2019 immediately from the app, more
-                    festivals to come!
-                  </li>
-                </ul>
-              </Card.Text>
+
+              <ul>
+                <li>
+                  Using Spotify API to listen to bands on music listings,
+                  removing the annoyance to copy, paste and select through the
+                  spotify app
+                </li>
+                <li>
+                  My most complex project to date, using React, a backend OAUTH
+                  server and HEROKUAPP
+                </li>
+                <li>
+                  Listen to Glastonbury 2019 immediately from the app, more
+                  festivals to come!
+                </li>
+              </ul>
 
               <Button
                 variant="dark"
@@ -69,13 +74,12 @@ const ReactView = () => {
             <Card.Img variant="top" src="images/react/car-locator.png" />
             <Card.Body>
               <Card.Title>React with Google maps</Card.Title>
-              <Card.Text>
-                <ul>
-                  <li>Map out coordinates from json into google maps</li>
-                  <li>Using bespoke map placemarkers</li>
-                  <li>Display table data in a easy to read / app/ way.</li>
-                </ul>
-              </Card.Text>
+
+              <ul>
+                <li>Map out coordinates from json into google maps</li>
+                <li>Using bespoke map placemarkers</li>
+                <li>Display table data in a easy to read / app/ way.</li>
+              </ul>
 
               <Button
                 variant="dark"
@@ -96,21 +100,19 @@ const ReactView = () => {
             <Card.Img variant="top" src="images/planets/Planet_alignment.jpg" />
             <Card.Body>
               <Card.Title>Planets - my first React page!</Card.Title>
-              <Card.Text>
-                <ul>
-                  <li>
-                    This is basic but I learnt some important React basics
-                  </li>
-                  <li>Learnt about jsx, using props and passing data</li>
-                  <li>
-                    First use of <code>array.map()</code> to print out json data
-                  </li>
-                  <li>
-                    Using <code>(...planet)</code> spread operator to avoid
-                    listing each prop on child component
-                  </li>
-                </ul>
-              </Card.Text>
+
+              <ul>
+                <li>This is basic but I learnt some important React basics</li>
+                <li>Learnt about jsx, using props and passing data</li>
+                <li>
+                  First use of <code>array.map()</code> to print out json data
+                </li>
+                <li>
+                  Using <code>(...planet)</code> spread operator to avoid
+                  listing each prop on child component
+                </li>
+              </ul>
+
               <Link to="/react/planets">
                 <Button variant="dark">Take a look</Button>
               </Link>
@@ -123,13 +125,12 @@ const ReactView = () => {
             <Card.Img variant="top" src="images/react/order-explorer.png" />
             <Card.Body>
               <Card.Title>Order review app</Card.Title>
-              <Card.Text>
-                <ul>
-                  <li>Uses an API to get images</li>
-                  <li>Handles amendments to orders</li>
-                  <li>Search feature</li>
-                </ul>
-              </Card.Text>
+
+              <ul>
+                <li>Uses an API to get images</li>
+                <li>Handles amendments to orders</li>
+                <li>Search feature</li>
+              </ul>
 
               <Button
                 variant="dark"

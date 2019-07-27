@@ -32,20 +32,19 @@ class UXExamples extends React.Component {
               <Card.Img variant="top" src="images/ux/ux-norwegian.jpg" />
               <Card.Body>
                 <Card.Title>Norwegian Airlines UX examples</Card.Title>
-                <Card.Text>
-                  <ul>
-                    <li>Live web pages changed only with javascript and CSS</li>
-                    <li>
-                      VWO(Visual Web Optimizer) used to render the new pages and
-                      gather reports on A/B test results
-                    </li>
-                    <li>
-                      Weekly A/B tests, lots of front end javascript, gave me
-                      confidence with js
-                    </li>
-                    <li>Good feedback from colleagues, happy with my work</li>
-                  </ul>
-                </Card.Text>
+
+                <ul>
+                  <li>Live web pages changed only with javascript and CSS</li>
+                  <li>
+                    VWO(Visual Web Optimizer) used to render the new pages and
+                    gather reports on A/B test results
+                  </li>
+                  <li>
+                    Weekly A/B tests, lots of front end javascript, gave me
+                    confidence with js
+                  </li>
+                  <li>Good feedback from colleagues, happy with my work</li>
+                </ul>
 
                 <Button variant="dark" onClick={this.handleShow}>
                   View UX projects

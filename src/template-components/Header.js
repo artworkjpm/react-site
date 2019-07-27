@@ -4,32 +4,63 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
-      <Navbar.Brand as={Link} to="/">
-        JPM Portfolio
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
+    /* <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link as={Link} to="/about">
+          <Nav.Link as={Link} to="/about" href="#home">
             About
           </Nav.Link>
-          <Nav.Link as={Link} to="/react">
+          <Nav.Link href="#features">Features</Nav.Link>
+          <Nav.Link href="#pricing">Pricing</Nav.Link>
+          <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.2">
+              Another action
+            </NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item href="#action/3.4">
+              Separated link
+            </NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
+        <Nav>
+          <Nav.Link href="#deets">More deets</Nav.Link>
+          <Nav.Link eventKey={2} href="#memes">
+            Dank memes
+          </Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+ */
+    <Navbar collapseOnSelect bg="dark" variant="dark" expand="lg">
+      <Navbar.Brand as={Link} to="/" href="#home">
+        JPM Portfolio
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="mr-auto">
+          <Nav.Link as={Link} to="/about" href="#about">
+            About
+          </Nav.Link>
+          <Nav.Link as={Link} to="/react" href="#react">
             React
           </Nav.Link>
-          <Nav.Link as={Link} to="/vue">
+          <Nav.Link as={Link} to="/vue" href="#vue">
             Vue
           </Nav.Link>
-          <Nav.Link as={Link} to="/angular">
+          <Nav.Link as={Link} to="/angular" href="#home">
             Angular
           </Nav.Link>
-          <Nav.Link as={Link} to="/webdev">
+          <Nav.Link as={Link} to="/webdev" href="#webdev">
             Web Dev
           </Nav.Link>
-          <Nav.Link as={Link} to="/ux">
+          <Nav.Link as={Link} to="/ux" href="#ux">
             UX
           </Nav.Link>
-          <Nav.Link as={Link} to="/crm">
+          <Nav.Link as={Link} to="/crm" href="#crm">
             CRM
           </Nav.Link>
           <Nav.Link
@@ -51,13 +82,13 @@ const Header = () => {
             Repo
           </Nav.Link>
           <NavDropdown title="Testing" id="basic-nav-dropdown">
-            <NavDropdown.Item as={Link} to="/testing/buttons">
+            <NavDropdown.Item as={Link} to="/testing/buttons" href="#buttonsx">
               Buttons
             </NavDropdown.Item>
           </NavDropdown>
 
           <NavDropdown title="Contact me" id="basic-nav-dropdown">
-            <NavDropdown.Item as={Link} to="/emailme">
+            <NavDropdown.Item as={Link} to="/emailme" href="#emailme">
               Email/Skype/Telephone
             </NavDropdown.Item>
             <NavDropdown.Item

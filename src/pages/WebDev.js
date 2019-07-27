@@ -22,13 +22,12 @@ const Webdev = () => {
               <Card.Title>
                 User Interface development, Data visualisation example
               </Card.Title>
-              <Card.Text>
-                <ul>
-                  <li>Used D3.js for the first time</li>
-                  <li>All made with Vanilla.js</li>
-                  <li>Difficult proposal completed in small time frame</li>
-                </ul>
-              </Card.Text>
+
+              <ul>
+                <li>Used D3.js for the first time</li>
+                <li>All made with Vanilla.js</li>
+                <li>Difficult proposal completed in small time frame</li>
+              </ul>
 
               <Button
                 variant="dark"
@@ -47,13 +46,12 @@ const Webdev = () => {
             <Card.Img variant="top" src="images/webdev/mini-ui.jpg" />
             <Card.Body>
               <Card.Title>Norwegian Mini UI feature</Card.Title>
-              <Card.Text>
-                <ul>
-                  <li>One example of mini UI added to Norwegian website</li>
-                  <li>Jquery / Vanilla.js, no frameworks</li>
-                  <li>Completed in small time frame</li>
-                </ul>
-              </Card.Text>
+
+              <ul>
+                <li>One example of mini UI added to Norwegian website</li>
+                <li>Jquery / Vanilla.js, no frameworks</li>
+                <li>Completed in small time frame</li>
+              </ul>
 
               <Button
                 variant="dark"

@@ -55,6 +55,12 @@ body {
   height: 240px;
 }
 
+@media (max-width: 400px) {
+  .card-img-top {
+    height: 150px;
+  }
+}
+
 .homeImage {
   height: 180px;
 }
