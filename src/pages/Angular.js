@@ -103,7 +103,7 @@ const Angular = () => {
               <ul>
                 <li>
                   My introduction to Angular, discover an estimation of when you
-                  will day based on real life health and life expectancy records
+                  will die based on real life health and life expectancy records
                 </li>
                 <li>Fancy css form styling</li>
               </ul>
