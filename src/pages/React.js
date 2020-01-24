@@ -14,17 +14,17 @@ const ReactView = () => {
     <>
       <h2 className="mt-5">React.js work</h2>
       <Row className="">
-        <Col xs={12} md={6} className="mt-4">
+        <Col xs={12} md={4} className="mt-4">
           <Button
             variant="dark"
             href="https://github.com/artworkjpm/react-site/blob/master/src/pages/react/InterviewQuestions.md"
             target="_blank"
             className="mr-2"
           >
-            Interview questions
+            React Notes
           </Button>
         </Col>
-        <Col xs={12} md={6} className="mt-4">
+        <Col xs={12} md={4} className="mt-4">
           <Button
             variant="dark"
             href="https://github.com/artworkjpm/react-site/blob/master/src/pages/react/TestingReact.md"
@@ -35,7 +35,7 @@ const ReactView = () => {
         </Col>
       </Row>
       <Row className="">
-        <Col xs={12} md={6} className="mt-4">
+        <Col xs={12} md={4} className="mt-4">
           <Card>
             <Card.Img variant="top" src="images/react/glasto.png" />
             <Card.Body>
@@ -69,7 +69,7 @@ const ReactView = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs={12} md={6} className="mt-4">
+        <Col xs={12} md={4} className="mt-4">
           <Card>
             <Card.Img variant="top" src="images/react/car-locator.png" />
             <Card.Body>
@@ -95,7 +95,7 @@ const ReactView = () => {
         </Col>
       </Row>
       <Row className="">
-        <Col xs={12} md={6} className="mt-4">
+        <Col xs={12} md={4} className="mt-4">
           <Card>
             <Card.Img variant="top" src="images/planets/Planet_alignment.jpg" />
             <Card.Body>
@@ -120,7 +120,7 @@ const ReactView = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs={12} md={6} className="mt-4">
+        <Col xs={12} md={4} className="mt-4">
           <Card>
             <Card.Img variant="top" src="images/react/order-explorer.png" />
             <Card.Body>

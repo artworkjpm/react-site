@@ -12,18 +12,19 @@ const Vue = () => {
 
   return (
     <>
-      <h2 className="mt-5">Vue.js work</h2>
-
+      <h2 className="mt-5 vue-text">Vue.js work</h2>
       <Row className="">
-        <Col xs={12} md={6} className="mt-4">
+
+
+        <Col xs={12} md={4} className="mt-4">
           <Card>
             <Card.Img variant="top" src="images/vue/football-app.png" />
             <Card.Body>
               <Card.Title>Football Data Vue App</Card.Title>
 
               <ul>
-                <li>Using Vue CLI to make a Premier League table</li>
-                <li>Show data on teams, players, scores, fixtures</li>
+                <li>Showing Football Data from around the world</li>
+                <li>Data on teams, players, scores, fixtures</li>
                 <li>Axios API calls managed in a cleaner way, separate from components</li>
                 <li>Using bootstrap-vue to style</li>
               </ul>
@@ -36,7 +37,58 @@ const Vue = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs={12} md={6} className="mt-4">
+
+
+
+
+
+        <Col xs={12} md={4} className="mt-4">
+          <Card>
+            <Card.Img variant="top" src="images/vue/vue-gridsome.png" />
+            <Card.Body>
+              <Card.Title>Vue Gridsome Air Table Web App</Card.Title>
+
+              <ul>
+                <li>Trying out Gridsome and Airtable to create simple products app</li>
+                <li>Gridsome uses GraphSQL to make queries that display content to the page </li>
+                <li>Gridsome makes Progressive Web Apps easy</li>
+                <li>Airtable is a free data spreadsheet way to manage static data and content</li>
+              </ul>
+
+              <Button variant="dark" href="https://jpm-gridsome.netlify.com/" target="_blank">
+                Take a look
+              </Button>
+
+              <GitButton href="https://github.com/artworkjpm/john-gridsome" />
+            </Card.Body>
+          </Card>
+        </Col>
+
+        <Col xs={12} md={4} className="mt-4">
+          <Card>
+            <Card.Img variant="top" src="images/vue/movie-search.jpeg" />
+            <Card.Body>
+              <Card.Title>Movie Search Vue App</Card.Title>
+
+              <ul>
+                <li>Using The Open Movie Database to search for movies</li>
+                <li>Practicing API calls</li>
+                <li>Made a bespoke Slider2 to display movies with no frameworks</li>
+              </ul>
+
+              <Button variant="dark" href="https://jpm-movie-vue.netlify.com/" target="_blank">
+                Take a look
+              </Button>
+
+              <GitButton href="https://github.com/artworkjpm/movie-vue" />
+            </Card.Body>
+          </Card>
+        </Col>
+
+      </Row>
+      {/* ROW*************** */}
+      <Row className="">
+        <Col xs={12} md={4} className="mt-4">
           <Card>
             <Card.Img variant="top" src="images/vue/quotes.jpg" />
             <Card.Body>
@@ -51,7 +103,7 @@ const Vue = () => {
                 <li>Input Form validation, responsive styling, API calls for British postcode and number validation</li>
               </ul>
 
-              <Button variant="dark" href="https://xenodochial-kowalevski-05fb27.netlify.com" target="_blank">
+              <Button variant="dark" href="https://jpm-quotes-vue.netlify.com" target="_blank">
                 Take a look
               </Button>
 
@@ -59,9 +111,7 @@ const Vue = () => {
             </Card.Body>
           </Card>
         </Col>
-      </Row>
-      <Row className="">
-        <Col xs={12} md={6} className="mt-4">
+        <Col xs={12} md={4} className="mt-4">
           <Card>
             <Card.Img variant="top" src="images/vue/vuex.jpg" />
             <Card.Body>
