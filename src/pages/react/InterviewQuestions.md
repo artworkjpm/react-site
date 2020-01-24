@@ -1,4 +1,4 @@
-# Possible React interview questions
+# React Notes
 
 ## Name lifecycle methods and their purpose
 
