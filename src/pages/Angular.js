@@ -11,8 +11,36 @@ const Angular = () => {
   });
   return (
     <>
-      <h2 className="mt-5">Angular 1 - Angular 2+ work</h2>
+      <h2 className="mt-5 angular-text ">Angular 1 - Angular 2+ work</h2>
       <Row className="">
+        <Col xs={12} md={4} className="mt-4">
+          <Card>
+            <Card.Img variant="top" src="images/angular/insurance.png" />
+            <Card.Body>
+              <Card.Title>Search Insurance Products UI</Card.Title>
+              <ul>
+                <li>
+                  Search by kinds, save and remove to Favourites section
+                </li>
+                <li>
+                  Using Observables, Service, Material Styling
+                </li>
+                <li>
+                  Angular Routing, Unit tests, Angular Flex
+                </li>
+              </ul>
+              <Button
+                variant="dark"
+                href="https://jpm-insurance.netlify.com/"
+                target="_blank"
+              >
+                Take a look
+              </Button>
+
+              <GitButton href="https://github.com/artworkjpm/insurance-app" />
+            </Card.Body>
+          </Card>
+        </Col>
         <Col xs={12} md={4} className="mt-4">
           <Card>
             <Card.Img variant="top" src="images/angular/sally-game.jpg" />
@@ -41,6 +69,32 @@ const Angular = () => {
             </Card.Body>
           </Card>
         </Col>
+
+        <Col xs={12} md={4} className="mt-4">
+          <Card>
+            <Card.Img variant="top" src="images/angular/restaurantzone.png" />
+            <Card.Body>
+              <Card.Title>restaurantzone new features</Card.Title>
+              <ul>
+                <li>Implemented the code for the Aboutus page</li>
+                <li>
+                  Created new components and features to large Angular 4 website
+                </li>
+                <li>Worked with Typescript</li>
+                <li>CSS animation on the Meet Our Team page</li>
+              </ul>
+              <Button
+                variant="dark"
+                href="https://therestaurantzone.com/aboutus"
+                target="_blank"
+              >
+                Take a look
+              </Button>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+      <Row className="">
         <Col xs={12} md={4} className="mt-4">
           <Card>
             <Card.Img variant="top" src="images/angular/punkipa.JPG" />
@@ -72,31 +126,6 @@ const Angular = () => {
         </Col>
         <Col xs={12} md={4} className="mt-4">
           <Card>
-            <Card.Img variant="top" src="images/angular/restaurantzone.png" />
-            <Card.Body>
-              <Card.Title>restaurantzone new features</Card.Title>
-              <ul>
-                <li>Implemented the code for the Aboutus page</li>
-                <li>
-                  Created new components and features to large Angular 4 website
-                </li>
-                <li>Worked with Typescript</li>
-                <li>CSS animation on the Meet Our Team page</li>
-              </ul>
-              <Button
-                variant="dark"
-                href="https://therestaurantzone.com/aboutus"
-                target="_blank"
-              >
-                Take a look
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-      <Row className="">
-        <Col xs={12} md={4} className="mt-4">
-          <Card>
             <Card.Img variant="top" src="images/angular/deathapp.jpg" />
             <Card.Body>
               <Card.Title>Death App (Angular 1)</Card.Title>
@@ -119,6 +148,7 @@ const Angular = () => {
             </Card.Body>
           </Card>
         </Col>
+
       </Row>
     </>
   );

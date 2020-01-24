@@ -27,7 +27,7 @@ class UXExamples extends React.Component {
         <h2 className="mt-5">UX Design and Development</h2>
 
         <Row className="">
-          <Col xs={12} md={6} className="mt-4">
+          <Col xs={12} md={4} className="mt-4">
             <Card>
               <Card.Img variant="top" src="images/ux/ux-norwegian.jpg" />
               <Card.Body>

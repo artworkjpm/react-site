@@ -10,9 +10,21 @@ code {
   background-color: #e20000;
   color: white;
 }
+
+.angular-text {
+  text-shadow: 1px 1px 3px #000000;
+}
 .bg-react {
-  background-color: #41d2ff;
-  color: #212529;
+  background-color: #24a1c7;
+  color: white;
+}
+
+.react-links a {
+  color: #000;
+}
+
+.react-blue {
+  text-shadow: 2px 2px 0px #484848;
 }
 
 .bg-vue {

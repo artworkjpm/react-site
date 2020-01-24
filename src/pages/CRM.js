@@ -8,7 +8,7 @@ const CRM = () => {
       <h2 className="mt-5">CRM Email Campaign Development</h2>
 
       <Row className="">
-        <Col xs={12} md={6} className="mt-4">
+        <Col xs={12} md={4} className="mt-4">
           <Card>
             <Card.Img variant="top" src="images/crm/module_guide.png" />
             <Card.Body>
@@ -35,7 +35,7 @@ const CRM = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs={12} md={6} className="mt-4">
+        <Col xs={12} md={4} className="mt-4">
           <Card>
             <Card.Img variant="top" src="images/crm/email-example.png" />
             <Card.Body>

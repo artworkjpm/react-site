@@ -15,7 +15,33 @@ const Webdev = () => {
       <h2 className="mt-5">Web development without frameworks</h2>
 
       <Row className="">
-        <Col xs={12} md={6} className="mt-4">
+        <Col xs={12} md={4} className="mt-4">
+          <Card>
+            <Card.Img variant="top" src="images/webdev/brava-site.png" />
+            <Card.Body>
+              <Card.Title>
+                Brava Software Solutions Site Design
+              </Card.Title>
+
+              <ul>
+                <li>Design Mock up for company website</li>
+                <li>Color and Brand coloring to be mediteranean style</li>
+                <li>BootStrap slider</li>
+              </ul>
+
+              <Button
+                variant="dark"
+                href="https://jpm-brava-site.netlify.com/"
+                target="_blank"
+              >
+                Take a look
+              </Button>
+
+              <GitButton href="https://github.com/artworkjpm/BravaSite" />
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col xs={12} md={4} className="mt-4">
           <Card>
             <Card.Img variant="top" src="images/webdev/d3work.jpg" />
             <Card.Body>
@@ -41,7 +67,7 @@ const Webdev = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs={12} md={6} className="mt-4">
+        <Col xs={12} md={4} className="mt-4">
           <Card>
             <Card.Img variant="top" src="images/webdev/mini-ui.jpg" />
             <Card.Body>
