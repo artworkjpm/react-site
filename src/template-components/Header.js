@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <Navbar collapseOnSelect bg="dark" variant="dark" expand="lg">
-      <Navbar.Brand as={Link} to="/" href="#home">
+      <Nav.Link navbar-collapse="true" as={Link} to="/" href="#home" className="navbar-brand">
         JPM Portfolio
-      </Navbar.Brand>
+      </Nav.Link>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
