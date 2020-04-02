@@ -55,11 +55,16 @@ body {
   height: 150px;
 }
 
-/* @media (max-width: 400px) {
-  .card-img-top {
-    height: 150px;
+@media (max-width: 990px) {
+  button.navbar-toggler {
+    position: absolute;
+    right: 20px;
   }
-} */
+}
+
+.navbar-dark .navbar-nav .show > .nav-link {
+  color: rgba(255, 255, 255, 0.5);
+}
 
 .homeImage {
   height: 180px;
