@@ -34,20 +34,22 @@ const ReactView = () => {
 			<Row>
 				<Col xs={12} md={4} className="mt-4">
 					<Card>
-						<Card.Img variant="top" src="images/react/order-explorer.png" />
+						<Card.Img variant="top" src="images/react/react-hooks.png" />
 						<Card.Body>
 							<Card.Title>React Hooks and Best Practices</Card.Title>
 
 							<ul>
-								<li>An app I built to understand better React Hooks</li>
-								<li>Using Redux inside the page Redux-Expensify</li>
-								<li>Based on several Udemy courses based around React and Hooks</li>
+								<li>I built an app to understand better React hooks and custom hooks</li>
+								<li>
+									Using Redux inside the page <b>Redux-Expensify</b>
+								</li>
+								<li>Based on several Udemy courses on React, React Hooks and Redux</li>
 							</ul>
 
-							<Button variant="dark" href="https://order-explorer.netlify.com/" target="_blank">
+							<Button variant="dark" href="https://react-hooks-redux.netlify.app/redux-expensify" target="_blank">
 								Take a look
 							</Button>
-							<GitButton href="https://github.com/artworkjpm/git_job_tests/tree/master/deporvillage/depor-app" />
+							<GitButton href="https://github.com/artworkjpm/react-hooks-course" />
 						</Card.Body>
 					</Card>
 				</Col>
