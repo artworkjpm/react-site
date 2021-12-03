@@ -15,64 +15,58 @@ import CRM from "./pages/CRM";
 import AppTesting from "./pages/testing/buttons";
 import EmailMe from "./pages/EmailMe";
 import Bevendean from "./pages/Bevendean";
-import ScrollIntoView from "./Router/ScrollIntoView"
+import ScrollIntoView from "./Router/ScrollIntoView";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import "./stylesheets/App.scss";
+import "./stylesheets/App.css";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showHeader: true
-    };
-  }
+	constructor(props) {
+		super(props);
+		this.state = {
+			showHeader: true,
+		};
+	}
 
-  hideNavigation = () => {
-    this.setState({
-      showHeader: false
-    });
-  };
+	hideNavigation = () => {
+		this.setState({
+			showHeader: false,
+		});
+	};
 
-  render() {
-    return (
-      <div className="App">
-        <Router>
-          {this.state.showHeader && <Header />}
+	render() {
+		return (
+			<div className="App">
+				<Router>
+					{this.state.showHeader && <Header />}
 
-          <Container>
-            <ScrollIntoView>
-              <Switch>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/about" component={About} />
-                <Route exact path="/react" component={ReactView} />
-                <Route exact path="/react/planets" component={Planets} />
-                <Route exact path="/vue" component={Vue} />
-                <Route exact path="/angular" component={Angular} />
-                <Route exact path="/webdev" component={Webdev} />
-                <Route exact path="/ux" component={UXExamples} />
-                <Route exact path="/crm" component={CRM} />
+					<Container>
+						<ScrollIntoView>
+							<Switch>
+								<Route exact path="/" component={Home} />
+								<Route exact path="/about" component={About} />
+								<Route exact path="/react" component={ReactView} />
+								<Route exact path="/react/planets" component={Planets} />
+								<Route exact path="/vue" component={Vue} />
+								<Route exact path="/angular" component={Angular} />
+								<Route exact path="/webdev" component={Webdev} />
+								<Route exact path="/ux" component={UXExamples} />
+								<Route exact path="/crm" component={CRM} />
 
-                <Route exact path="/testing/buttons" component={AppTesting} />
-                <Route exact path="/emailme" component={EmailMe} />
+								<Route exact path="/testing/buttons" component={AppTesting} />
+								<Route exact path="/emailme" component={EmailMe} />
 
-                <Route
-                  exact
-                  path="/bevendean"
-                  render={() => (
-                    <Bevendean hideNavigation={this.hideNavigation} />
-                  )}
-                />
-                <Route component={NotFound} />
-              </Switch>
-            </ScrollIntoView>
-          </Container>
-          {this.state.showHeader && <Footer />}
-        </Router>
-      </div>
-    );
-  }
+								<Route exact path="/bevendean" render={() => <Bevendean hideNavigation={this.hideNavigation} />} />
+								<Route component={NotFound} />
+							</Switch>
+						</ScrollIntoView>
+					</Container>
+					{this.state.showHeader && <Footer />}
+				</Router>
+			</div>
+		);
+	}
 }
 
 export default App;
