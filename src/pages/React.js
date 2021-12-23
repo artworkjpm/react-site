@@ -30,8 +30,26 @@ const ReactView = () => {
 					Testing Notes
 				</a>
 			</div>
-
 			<Row>
+				<Col xs={12} md={4} className="mt-4">
+					<Card>
+						<Card.Img variant="top" src="images/react/react-hooks.png" />
+						<Card.Body>
+							<Card.Title>Atomic Design Architecture with React-Redux</Card.Title>
+
+							<ul>
+								<li>Simple todos app showing off the Atomic Design principles</li>
+								<li>Using React-Redux with hooks</li>
+								<li>Integration tests for the redux store actions and reducers</li>
+							</ul>
+
+							<Button variant="dark" href="https://react-hooks-redux.netlify.app/redux-expensify" target="_blank">
+								Take a look
+							</Button>
+							<GitButton href="https://github.com/artworkjpm/react-hooks-course" />
+						</Card.Body>
+					</Card>
+				</Col>
 				<Col xs={12} md={4} className="mt-4">
 					<Card>
 						<Card.Img variant="top" src="images/react/react-hooks.png" />
@@ -76,6 +94,8 @@ const ReactView = () => {
 						</Card.Body>
 					</Card>
 				</Col>
+			</Row>
+			<Row>
 				<Col xs={12} md={4} className="mt-4">
 					<Card>
 						<Card.Img variant="top" src="images/react/climate.png" />
@@ -98,8 +118,6 @@ const ReactView = () => {
 						</Card.Body>
 					</Card>
 				</Col>
-			</Row>
-			<Row>
 				<Col xs={12} md={4} className="mt-4">
 					<Card>
 						<Card.Img variant="top" src="images/react/glucose.png" />
@@ -137,6 +155,8 @@ const ReactView = () => {
 						</Card.Body>
 					</Card>
 				</Col>
+			</Row>
+			<Row>
 				<Col xs={12} md={4} className="mt-4">
 					<Card>
 						<Card.Img variant="top" src="images/react/car-locator.png" />
@@ -157,8 +177,6 @@ const ReactView = () => {
 						</Card.Body>
 					</Card>
 				</Col>
-			</Row>
-			<Row>
 				<Col xs={12} md={4} className="mt-4">
 					<Card>
 						<Card.Img variant="top" src="images/react/order-explorer.png" />
