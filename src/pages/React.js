@@ -33,7 +33,7 @@ const ReactView = () => {
 			<Row>
 				<Col xs={12} md={4} className="mt-4">
 					<Card>
-						<Card.Img variant="top" src="images/react/react-hooks.png" />
+						<Card.Img variant="top" src="images/react/atomic-design.png" />
 						<Card.Body>
 							<Card.Title>Atomic Design Architecture with React-Redux</Card.Title>
 
@@ -43,10 +43,10 @@ const ReactView = () => {
 								<li>Integration tests for the redux store actions and reducers</li>
 							</ul>
 
-							<Button variant="dark" href="https://react-hooks-redux.netlify.app/redux-expensify" target="_blank">
+							<Button variant="dark" href="https://react-atomic-redux.netlify.app/" target="_blank">
 								Take a look
 							</Button>
-							<GitButton href="https://github.com/artworkjpm/react-hooks-course" />
+							<GitButton href="https://github.com/artworkjpm/react-code-challenge-todos-react-redux" />
 						</Card.Body>
 					</Card>
 				</Col>
