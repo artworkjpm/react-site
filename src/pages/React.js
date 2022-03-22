@@ -12,23 +12,35 @@ const ReactView = () => {
 	});
 	return (
 		<>
-			<h2 className="mt-5 react-blue">React work</h2>
+			<h2 className="mt-5 react-blue">React project examples and best practices</h2>
 			<div className="react-links">
-				<a
-					href="https://github.com/artworkjpm/react-site/blob/master/src/pages/react/InterviewQuestions.md"
+				<Button
+					variant="dark"
+					href="/files/html/after-udemy-classes-1st-session"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					Notes on React
-				</a>
-				<br />
-				<a
-					href="https://github.com/artworkjpm/react-site/blob/master/src/pages/react/TestingReact.md"
+					Session 1 | Modern React tutorial by John Moran 2021
+					<img src="/images/main/logo.png" alt="github" width="22" className="mx-2" />
+				</Button>
+				<Button
+					variant="dark"
+					href="/files/html/after-udemy-classes-2nd-session"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					Testing Notes
-				</a>
+					Session 2 | Modern React tutorial by John Moran 2021
+					<img src="/images/main/logo.png" alt="github" width="22" className="mx-2" />
+				</Button>
+				<Button
+					variant="dark"
+					href="https://github.com/artworkjpm/react-hooks-course/blob/master/best-practices.md"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					Best practices guide
+					<img src="/images/main/logo.png" alt="github" width="22" className="mx-2" />
+				</Button>
 			</div>
 			<Row>
 				<Col xs={12} md={4} className="mt-4">

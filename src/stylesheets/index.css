@@ -1,47 +1,50 @@
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 .background-white {
-  background-color: #dfdfdf;
-  color: #212529;
+	background-color: #dfdfdf;
+	color: #212529;
 }
 
 .bg-angular {
-  background-color: #e20000;
-  color: white;
+	background-color: #e20000;
+	color: white;
 }
 
 .angular-text {
-  text-shadow: 1px 1px 3px #000000;
+	text-shadow: 1px 1px 3px #000000;
 }
 .bg-react {
-  background-color: #24a1c7;
-  color: white;
+	background-color: #24a1c7;
+	color: white;
 }
 
 .react-links a {
-  color: #000;
+	margin-right: 20px;
+	margin-top: 20px;
 }
 
 .react-blue {
-  text-shadow: 2px 2px 0px #484848;
+	color: #343a40;
+	font-weight: bold;
+	text-shadow: 0 0 5px #fff;
 }
 
 .bg-vue {
-  background-color: #00bc7d;
-  color: white;
+	background-color: #00bc7d;
+	color: white;
 }
 
 .vue-text {
-  text-shadow: 3px 3px 3px #007112;
+	text-shadow: 3px 3px 3px #007112;
 }
 .modal {
-  color: #212529;
+	color: #212529;
 }
 .modal-dialog {
-  max-width: unset;
+	max-width: unset;
 }
 
 .curseme {
-  cursor: pointer;
+	cursor: pointer;
 }
