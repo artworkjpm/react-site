@@ -1,8 +1,23 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { useAWSRum } from "../hooks/useAWSRum";
 
 const Header = () => {
+	const awsRum = useAWSRum();
+	const recordClickEvent = (nameOfElement) => {
+		console.log(nameOfElement);
+		awsRum.recordEvent(nameOfElement, {
+			location: "IAD",
+			current_url: "amazonaws.com",
+			user_interaction: {
+				interaction_1: "click",
+				interaction_2: "scroll",
+			},
+			visit_count: 10,
+		});
+	};
+
 	return (
 		<Navbar collapseOnSelect bg="dark" variant="dark" expand="lg">
 			<Nav>
@@ -12,13 +27,13 @@ const Header = () => {
 
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
-					<Nav.Link as={Link} to="/about" href="#about">
+					<Nav.Link as={Link} to="/about" href="#about" onClick={() => recordClickEvent("#about")}>
 						About
 					</Nav.Link>
-					<Nav.Link as={Link} to="/react" href="#react">
+					<Nav.Link as={Link} to="/react" href="#react" onClick={() => recordClickEvent("#react")}>
 						React
 					</Nav.Link>
-					<Nav.Link as={Link} to="/vue" href="#vue">
+					<Nav.Link as={Link} to="/vue" href="#vue" onClick={() => recordClickEvent("#vue")}>
 						Vue
 					</Nav.Link>
 					<Nav.Link as={Link} to="/angular" href="#angular">
