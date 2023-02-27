@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { AnalyticsProvider } from "./context/analyticsContext";
 import About from "./pages/About";
 import Angular from "./pages/Angular";
 import Bevendean from "./pages/Bevendean";
@@ -18,40 +19,36 @@ import ScrollIntoView from "./Router/ScrollIntoView";
 import "./stylesheets/App.css";
 import Footer from "./template-components/Footer";
 import Header from "./template-components/Header";
-import { useState } from "react";
-import { useAWSRum } from "./hooks/useAWSRum";
 
 function App() {
 	const [showHeader, setShowHeader] = useState(true);
-	useAWSRum();
 
 	return (
 		<div className="App">
 			<Router>
-				{showHeader && <Header />}
-
-				<Container>
-					<ScrollIntoView>
-						<Switch>
-							<Route exact path="/" component={Home} />
-							<Route exact path="/about" component={About} />
-							<Route exact path="/react" component={ReactView} />
-							<Route exact path="/react/planets" component={Planets} />
-							<Route exact path="/vue" component={Vue} />
-							<Route exact path="/angular" component={Angular} />
-							<Route exact path="/webdev" component={Webdev} />
-							<Route exact path="/ux" component={UXExamples} />
-							<Route exact path="/crm" component={CRM} />
-
-							<Route exact path="/testing/buttons" component={AppTesting} />
-							<Route exact path="/emailme" component={EmailMe} />
-
-							<Route exact path="/bevendean" render={() => <Bevendean hideNavigation={setShowHeader(false)} />} />
-							<Route component={NotFound} />
-						</Switch>
-					</ScrollIntoView>
-				</Container>
-				{showHeader && <Footer />}
+				<AnalyticsProvider>
+					{showHeader && <Header />}
+					<Container>
+						<ScrollIntoView>
+							<Switch>
+								<Route exact path="/" component={Home} />
+								<Route exact path="/about" component={About} />
+								<Route exact path="/react" component={ReactView} />
+								<Route exact path="/react/planets" component={Planets} />
+								<Route exact path="/vue" component={Vue} />
+								<Route exact path="/angular" component={Angular} />
+								<Route exact path="/webdev" component={Webdev} />
+								<Route exact path="/ux" component={UXExamples} />
+								<Route exact path="/crm" component={CRM} />
+								<Route exact path="/testing/buttons" component={AppTesting} />
+								<Route exact path="/emailme" component={EmailMe} />
+								<Route exact path="/bevendean" render={() => <Bevendean hideNavigation={setShowHeader(false)} />} />
+								<Route component={NotFound} />
+							</Switch>
+						</ScrollIntoView>
+					</Container>
+					{showHeader && <Footer />}
+				</AnalyticsProvider>
 			</Router>
 		</div>
 	);
