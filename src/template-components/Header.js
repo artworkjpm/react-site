@@ -1,13 +1,13 @@
 import React from "react";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useAnalytics } from "../context/analyticsContext";
 
 const Header = () => {
-	const awsRum = useAnalytics();
+	const { rum } = useAnalytics();
 	const recordClickEvent = (nameOfElement) => {
-		console.log("running click event aws");
-		awsRum.recordEvent(nameOfElement, {
+		console.log(`click event ${nameOfElement}`);
+		rum.recordEvent(nameOfElement, {
 			user_interaction: {
 				interaction: "click",
 			},

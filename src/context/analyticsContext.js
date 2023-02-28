@@ -1,14 +1,20 @@
 import { AwsRum } from "aws-rum-web";
-import React, { createContext, useContext } from "react";
+import React, { useState, useEffect, createContext, useContext } from "react";
 
 const AnalyticsContext = createContext(null);
 export const useAnalytics = () => useContext(AnalyticsContext);
 
-export const AnalyticsProvider = ({ children }) => {
-	const useAWSRum = () => {
-		console.log("running aws cloudwatch");
-		let awsRum = null;
+const AnalyticsProvider = ({ children }) => {
+	console.log("running aws cloudwatch");
+	const [rumRef, setRumRef] = useState(null);
 
+	useEffect(() => {
+		if (!rumRef) {
+			setRumRef(createRum());
+		}
+	}, [rumRef]);
+
+	const createRum = () => {
 		try {
 			const config = {
 				sessionSampleRate: 1,
@@ -27,12 +33,15 @@ export const AnalyticsProvider = ({ children }) => {
 			const APPLICATION_VERSION = "1.0.0";
 			const APPLICATION_REGION = "eu-west-1";
 			// eslint-disable-next-line
-			awsRum = new AwsRum(APPLICATION_ID, APPLICATION_VERSION, APPLICATION_REGION, config);
+			return new AwsRum(APPLICATION_ID, APPLICATION_VERSION, APPLICATION_REGION, config);
 		} catch (error) {
 			// Ignore errors thrown during CloudWatch RUM web client initialization
-		}
 
-		return awsRum;
+			return null;
+		}
 	};
-	return <AnalyticsContext.Provider value={useAWSRum()}>{children}</AnalyticsContext.Provider>;
+
+	return <AnalyticsContext.Provider value={{ rum: rumRef }}>{children}</AnalyticsContext.Provider>;
 };
+
+export default AnalyticsProvider;

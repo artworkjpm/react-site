@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { AnalyticsProvider } from "./context/analyticsContext";
+import AnalyticsProvider from "./context/analyticsContext";
 import About from "./pages/About";
 import Angular from "./pages/Angular";
 import Bevendean from "./pages/Bevendean";
