@@ -5,6 +5,7 @@ import { useAnalytics } from "../context/analyticsContext";
 
 const Header = () => {
 	const { rum } = useAnalytics();
+	console.log(rum);
 	const recordClickEvent = (nameOfElement) => {
 		console.log(`click event ${nameOfElement}`);
 		rum.recordEvent(nameOfElement, {

@@ -1,20 +1,14 @@
 import { AwsRum } from "aws-rum-web";
-import React, { useState, useEffect, createContext, useContext } from "react";
+import React, { createContext, useContext, useRef } from "react";
 
 const AnalyticsContext = createContext(null);
 export const useAnalytics = () => useContext(AnalyticsContext);
 
 const AnalyticsProvider = ({ children }) => {
 	console.log("running aws cloudwatch");
-	const [rumRef, setRumRef] = useState(null);
-
-	useEffect(() => {
-		if (!rumRef) {
-			setRumRef(createRum());
-		}
-	}, [rumRef]);
 
 	const createRum = () => {
+		console.log("calling createRum()");
 		try {
 			const config = {
 				sessionSampleRate: 1,
@@ -41,7 +35,9 @@ const AnalyticsProvider = ({ children }) => {
 		}
 	};
 
-	return <AnalyticsContext.Provider value={{ rum: rumRef }}>{children}</AnalyticsContext.Provider>;
+	const rumRef = useRef(createRum());
+
+	return <AnalyticsContext.Provider value={{ rum: rumRef.current }}>{children}</AnalyticsContext.Provider>;
 };
 
 export default AnalyticsProvider;
