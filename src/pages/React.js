@@ -45,6 +45,71 @@ const ReactView = () => {
 			<Row>
 				<Col xs={12} md={4} className="mt-4">
 					<Card>
+						<Card.Img variant="top" src="images/react/footballcover.png" />
+						<Card.Body>
+							<Card.Title>Predict FA Premier League Results</Card.Title>
+
+							<ul>
+								<li>Register and save your score predictions</li>
+								<li>Earn points when you guess the results correctly</li>
+								<li>Using: react-redux, reduxjs/toolkit, firebase, tailwindcss, </li>
+							</ul>
+
+							<Button variant="dark" href="https://soccerjpm.netlify.app" target="_blank">
+								Take a look
+							</Button>
+							<GitButton href="https://github.com/artworkjpm/react-code-challenge-todos-react-redux" />
+						</Card.Body>
+					</Card>
+				</Col>
+				<Col xs={12} md={4} className="mt-4">
+					<Card>
+						<Card.Img variant="top" src="images/react/react-hooks.png" />
+						<Card.Body>
+							<Card.Title>React Hooks and Best Practices</Card.Title>
+
+							<ul>
+								<li>I built an app to understand better React hooks and custom hooks</li>
+								<li>
+									Using Redux inside the page <b>Redux-Expensify</b>
+								</li>
+								<li>Based on several Udemy courses on React, React Hooks and Redux</li>
+							</ul>
+
+							<Button variant="dark" href="https://react-hooks-redux.netlify.app/redux-expensify" target="_blank">
+								Take a look
+							</Button>
+							<GitButton href="https://github.com/artworkjpm/react-hooks-course" />
+						</Card.Body>
+					</Card>
+				</Col>
+				<Col xs={12} md={4} className="mt-4">
+					<Card>
+						<Card.Img variant="top" src="images/react/glasto.png" />
+						<Card.Body>
+							<Card.Title>Clipify app - instantly listen to music</Card.Title>
+
+							<ul>
+								<li>
+									Using Spotify API to listen to bands on music listings, removing the annoyance to copy, paste and
+									select through the spotify app
+								</li>
+								<li>My most complex project to date, using React, a backend OAUTH server and HEROKUAPP</li>
+								<li>Listen to Glastonbury 2019 immediately from the app, more festivals to come!</li>
+							</ul>
+
+							<Button variant="dark" href="https://clipify-backend.herokuapp.com/login" target="_blank">
+								Take a look
+							</Button>
+
+							<GitButton href="https://github.com/artworkjpm/spotify-calls" />
+						</Card.Body>
+					</Card>
+				</Col>
+			</Row>
+			<Row>
+				<Col xs={12} md={4} className="mt-4">
+					<Card>
 						<Card.Img variant="top" src="images/react/atomic-design.png" />
 						<Card.Body>
 							<Card.Title>Atomic Design Architecture with React-Redux</Card.Title>
