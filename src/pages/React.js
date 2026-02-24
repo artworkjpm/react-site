@@ -14,35 +14,39 @@ const ReactView = () => {
 		<>
 			<h2 className="mt-5 react-blue">React project examples and best practices</h2>
 			<div className="react-links">
-				<Button
-					variant="dark"
-					href="/files/html/after-udemy-classes-1st-session"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
+				<Button variant="dark" href="/files/html/after-udemy-classes-1st-session" target="_blank" rel="noopener noreferrer">
 					Session 1 | Modern React tutorial by John Moran 2021
 					<img src="/images/main/logo.png" alt="github" width="22" className="mx-2" />
 				</Button>
-				<Button
-					variant="dark"
-					href="/files/html/after-udemy-classes-2nd-session"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
+				<Button variant="dark" href="/files/html/after-udemy-classes-2nd-session" target="_blank" rel="noopener noreferrer">
 					Session 2 | Modern React tutorial by John Moran 2021
 					<img src="/images/main/logo.png" alt="github" width="22" className="mx-2" />
 				</Button>
-				<Button
-					variant="dark"
-					href="https://github.com/artworkjpm/react-hooks-course/blob/master/best-practices.md"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
+				<Button variant="dark" href="https://github.com/artworkjpm/react-hooks-course/blob/master/best-practices.md" target="_blank" rel="noopener noreferrer">
 					Best practices guide
 					<img src="/images/main/logo.png" alt="github" width="22" className="mx-2" />
 				</Button>
 			</div>
 			<div className="grid-container-boxes">
+				<Card>
+					<Card.Img variant="top" src="images/react/get2knowlogo.jpg" />
+					<Card.Body>
+						<Card.Title>Get2Know Social Events and Ice Breaker Conversations</Card.Title>
+
+						<ul>
+							<li>Sign up easily and update your profile with information you want to share about your interests and hobbies</li>
+							<li>Using OpenAI we create ice breaker conversations based on users profiles</li>
+							<li>Create social events similar to Meetup.com</li>
+						</ul>
+
+						<div className="force-bottom">
+							<Button variant="dark" href="https://get2knowsocial.web.app/" target="_blank">
+								Take a look
+							</Button>
+							<GitButton href="https://github.com/artworkjpm/speed-dating-easybase" />
+						</div>
+					</Card.Body>
+				</Card>
 				<Card>
 					<Card.Img variant="top" src="images/react/footballcover.png" />
 					<Card.Body>
@@ -107,10 +111,7 @@ const ReactView = () => {
 						<Card.Title>Clipify app - instantly listen to music</Card.Title>
 
 						<ul>
-							<li>
-								Using Spotify API to listen to bands on music listings, removing the annoyance to copy, paste and select
-								through the spotify app
-							</li>
+							<li>Using Spotify API to listen to bands on music listings, removing the annoyance to copy, paste and select through the spotify app</li>
 							<li>My most complex project to date, using React, a backend OAUTH server and HEROKUAPP</li>
 							<li>Listen to Glastonbury 2019 immediately from the app, more festivals to come!</li>
 						</ul>
@@ -129,9 +130,7 @@ const ReactView = () => {
 						<Card.Title>Climate Change Forecaster</Card.Title>
 
 						<ul>
-							<li>
-								I combined a free API service that predicts temperatures of the future with my Trendline made in js
-							</li>
+							<li>I combined a free API service that predicts temperatures of the future with my Trendline made in js</li>
 							<li>Chart.js is used for the form.</li>
 							<li>No CSS Framework, handcoded CSS.</li>
 						</ul>
